@@ -1,0 +1,7 @@
+query AllCourses {
+  allCourses {
+    id
+    name
+    totalLearners
+  }
+}

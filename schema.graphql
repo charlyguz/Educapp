@@ -1,0 +1,368 @@
+scalar Date
+scalar JWT
+
+schema {
+  query: Query
+  mutation: Mutation
+}
+
+type Query {
+  # General
+  allCourses: [Course!]
+  # Parent
+  myChildren: [Student!]
+  # Student
+  myCourses: [Course!]
+  myClasses: [Class!]
+  # Single course
+  courseInfo(courseId: String!): Course!
+}
+
+type Mutation {
+  # Authentication
+  signin(data: SigninInput): Auth!
+  signup(data: SignupInput): Auth!
+  refreshToken(token: JWT!): Token!
+  # Student actions
+  joinCourse(courseId: String!): CourseInProgress!
+  completeLesson(lessonId: String!): Boolean
+  # Teacher actions
+  # Course creation
+  # TODO: edit, delete
+  createCourse(data: CreateCourseInput!): Course!
+  createSection(data: CreateSectionInput!): Section!
+  createLesson(data: CreateLessonInput!): Lesson!
+  # Parent actions
+  createStudent(data: StudentSignupInput!): Student
+  addStudentToClass(studentId: String!, classId: String!): Boolean
+  # Tutor actions
+  scheduleSession(studentId: String!, date: Date!): LiveSession!
+  # Admin actions
+  # Same as teacher
+}
+
+input SigninInput {
+  identifier: String!
+  password: String!
+}
+
+input SignupInput {
+  email: String!
+  firstname: String
+  lastname: String
+  password: String!
+}
+
+input StudentSignupInput {
+  nickname: String!
+  firstname: String
+  lastname: String
+  password: String!
+}
+
+input CreateCourseInput {
+  name: String!
+  description: String
+  # image
+  isPublic: Boolean!
+  classId: String
+  tagIds: [String!]
+  subjectId: String!
+  level: String
+  gradeId: String
+}
+
+input CreateSectionInput {
+  name: String!
+  courseId: String!
+}
+
+input CreateLessonInput {
+  name: String!
+  content: String!
+  # videoUrl
+  sectionId: String!
+}
+
+# Base type
+interface Node {
+  id: String!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+union UserKind = Parent | Teacher | Tutor
+union AllUserKind = Parent | Teacher | Tutor | Admin | Student
+
+enum Role {
+  ADMIN
+  STUDENT
+  PARENT
+  TEACHER
+  TUTOR
+}
+
+type Auth {
+  """
+  JWT access token
+  """
+  accessToken: JWT!
+
+  """
+  JWT refresh token
+  """
+  refreshToken: JWT!
+  user: AllUserKind!
+}
+
+type Token {
+  """JWT access token"""
+  accessToken: JWT!
+
+  """JWT refresh token"""
+  refreshToken: JWT!
+}
+
+interface User implements Node {
+  id: String!
+  name: String!
+  lastname: String!
+  email: String!
+  role: Role!
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+enum Sex {
+  MALE
+  FEMALE
+  OTHER
+}
+
+type Student implements Node {
+  id: String!
+  nickname: String!
+  name: String!
+  role: Role!
+  sex: Sex
+  grade: String
+  birthDate: Date
+  # Relationships
+  parent: Parent!
+  classes: [Class!]
+  tutors: [Tutor!]
+  liveSessions: [LiveSession!]
+  coursesInProgress: [CourseInProgress!]
+  # Pendiente
+  interests: [String]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Admin implements User & Node {
+  id: String!
+  name: String!
+  lastname: String!
+  email: String!
+  role: Role!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Parent implements User & Node {
+  id: String!
+  name: String!
+  lastname: String!
+  email: String!
+  role: Role!
+  monthlyIncome: String
+  # Relationships
+  children: [Student!]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+enum DayOfWeek {
+  SUNDAY
+  MONDAY
+  TUESDAY
+  WEDNESDAY
+  THURSDAY
+  FRIDAY
+  SATURDAY
+}
+
+type HoursInDay {
+  day: DayOfWeek!
+  hours: [Int!]!
+}
+
+type Tutor implements User & Node {
+  id: String!
+  name: String!
+  lastname: String!
+  email: String!
+  role: Role!
+  availableHours: [HoursInDay!]
+  collegeName: String
+  # Materias
+  subjects: [String]
+  ine: String # URL
+  kardex: String # URL
+  # Relationships
+  students: [Student!]
+  liveSessions: [LiveSession!]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Teacher implements User & Node {
+  id: String!
+  name: String!
+  lastname: String!
+  email: String!
+  role: Role!
+  subjects: [String]
+  ine: String # URL
+  license: String # URL
+  # Relationships
+  classes: [Class]
+  courses: [Course]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Tag implements Node {
+  id: String!
+  name: String!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Subject implements Node {
+  id: String!
+  name: String!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+enum CourseLevel {
+  BASIC
+  INTERMEDIATE
+  ADVANCED
+}
+
+type CourseGrade implements Node {
+  id: String!
+  name: String!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Class implements Node {
+  id: String!
+  name: String!
+  classId: String!
+  # Relationships
+  students: [Student!]
+  teacher: Teacher!
+  courses: [Course!]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Course implements Node {
+  id: String!
+  name: String!
+  description: String
+  imageUrl: String
+  isPublic: Boolean!
+  published: Boolean
+  # Relationships
+  # Clase a la que pertence si no es público
+  class: Class
+  # Etiquetas
+  tags: [Tag!]
+  # Materia
+  subject: Subject
+  # Básico, intermedio, avanzado
+  level: CourseLevel
+  # Primaria, secuEndaria
+  grade: CourseGrade
+  sections: [Section!]
+  progress: [CourseInProgress]
+  # Computed values
+  totalLearners: Int!
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Section implements Node {
+  id: String!
+  name: String!
+  # Relationships
+  course: Course!
+  lessons: [Lesson!]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type Lesson implements Node {
+  id: String!
+  name: String!
+  content: String!
+  videoUrl: String
+  # Relationships
+  section: Section
+  progress: [LessonInProgress]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type CourseInProgress implements Node {
+  id: String!
+  isCompleted: Boolean
+  # Relationships
+  student: Student
+  course: Course
+  lessonsInProgress: [LessonInProgress]
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type LessonInProgress implements Node {
+  id: String!
+  isCompleted: Boolean
+  # Relationships
+  courseProgress: CourseInProgress
+  lesson: Lesson
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}
+
+type LiveSession implements Node {
+  id: String!
+  sessionId: String!
+  scheduledAt: Date!
+  # Relationships
+  student: Student
+  tutor: Tutor
+  # Timestamps
+  createdAt: Date!
+  updatedAt: Date!
+}

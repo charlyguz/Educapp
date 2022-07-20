@@ -1,0 +1,16 @@
+{
+  "recommendations": [
+    "antfu.iconify",
+    "antfu.unocss",
+    "antfu.vite",
+    "antfu.goto-alias",
+    "csstools.postcss",
+    "vue.volar",
+    "lokalise.i18n-ally",
+    "esbenp.prettier-vscode",
+    "dbaeumer.vscode-eslint",
+    "graphql.vscode-graphql",
+    "ms-vscode.js-debug",
+    "ms-vscode.js-debug-companion"
+  ]
+}

@@ -1,0 +1,2 @@
+schema: "schema.graphql"
+documents: "src/graphql/**/*.{graphql,js,ts,jsx,tsx}"

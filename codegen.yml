@@ -1,0 +1,26 @@
+overwrite: true
+schema: schema.graphql
+generates:
+  src/generated/schema.d.ts:
+    config:
+      scalars:
+        Date: Date
+    plugins:
+      - typescript
+  src/generated/operations.ts:
+    documents:
+      - "src/graphql/**/*.graphql"
+    config:
+      scalars:
+        Date: Date
+      documentMode: documentNode
+    plugins:
+      - typescript
+      - typescript-operations
+      - typescript-vue-apollo
+  ./graphql.schema.json:
+    config:
+      scalars:
+        Date: Date
+    plugins:
+      - introspection
