@@ -7,17 +7,18 @@
       </div>
   <section class="progreso my-4 w-100 px-4">
     <div class="w-100 d-flex justify-content-between">
-      <p>Tu progreso para cumplir tu meta</p>
+      <h5 class="mb-2">Tu progreso para cumplir tu meta</h5>
       <a class="text-dark" href="">Ver mas</a>
     </div>
-    <div class="h-100 h-100 border border-dark text-center ">
-      <!-- Grafica del avance del estudiante -->
-      Grafica del avance del estudiante
+    <div class="progress progress-striped active">
+      <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
+          Progreso: 40%<img class="logo-progress" src="../../assets/icons/cohete.png" alt="">
+      </div>
     </div>
   </section>
   <section class="mis_cursos my-4 w-100 px-4">
     <div class="w-100 d-flex justify-content-between">
-      <p>continua donde te quedaste</p>
+      <h5>continua donde te quedaste</h5>
       <a class="text-dark" href="">Ver mas</a>
     </div>
     <div class="w-100">
@@ -101,6 +102,7 @@ export default {
     background-color: #D9E3FF;
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
   }
   .header h3 {
@@ -113,7 +115,7 @@ export default {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 80%;
+    width: 60%;
     height: 100%;
   }
   .navbar li {
@@ -131,6 +133,36 @@ export default {
   }
   .class_three{
     background-color: rgb(244, 157, 171);
+  }
+  .progress {
+    width: 100%;
+    height: 30px;
+    background-color: #D9E3FF;
+  }
+  .progress-bar-purple {
+    /* background-image: linear-gradient(to right, #ffbf2b, #ff7300, #f91f06); */
+    /* position: absolute; */
+    /* width: 100vw;
+    height: 100vh; */
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    /* font-size: 45px; */
+    font-weight: bold;
+    background: linear-gradient(150deg, #ffb702,  #f16202, #f90303);
+    background-size: 400% 300%;
+    animation: BgGradient 3.5s ease infinite;
+  }
+  @keyframes BgGradient {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 50% 0%;}
+    100% {background-position: 0% 50%;}
+}
+  .logo-progress {
+    position: absolute;
+    left:40%;
+    width: 40px;
+    height: 40px;
   }
   .img{
     width: 100%;
@@ -195,5 +227,68 @@ export default {
   border-bottom: 3px solid rgb(35, 237, 99);
 
 }
+.neon {
+  font-weight: bold;
+	text-align: center;
+	text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  animation: neon 4s ease-in-out infinite;
+}
+
+@keyframes neon {
+  0% {
+    text-shadow:
+      0 0 5px rgba(0,178,255,1),
+      0 0 10px rgba(0,178,255,1),
+      0 0 20px rgba(0,178,255,1),
+      0 0 40px rgba(38,104,127,1),
+      0 0 80px rgba(38,104,127,1),
+      0 0 90px rgba(38,104,127,1),
+      0 0 100px rgba(38,104,127,1),
+      0 0 140px rgba(38,104,127,1),
+      0 0 180px rgba(38,104,127,1);
+  }
+  50% {
+  text-shadow:
+    0 0 5px rgb(255, 30, 0),
+    0 0 10px rgb(255, 0, 0),
+    0 0 20px rgb(255, 34, 0),
+    0 0 40px rgb(127, 50, 38),
+    0 0 80px rgb(127, 38, 38),
+    0 0 90px rgb(127, 38, 38),
+    0 0 100px rgb(127, 47, 38),
+    0 0 140px rgb(127, 48, 38),
+    0 0 180px rgb(127, 50, 38);
+  }
+  100% {
+    text-shadow:
+      0 0 5px rgb(9, 255, 0),
+      0 0 10px rgb(21, 255, 0),
+      0 0 20px rgb(0, 255, 21),
+      0 0 40px rgb(38, 127, 44),
+      0 0 80px rgb(38, 127, 42),
+      0 0 90px rgb(38, 127, 44),
+      0 0 100px rgb(38, 127, 42),
+      0 0 140px rgba(38,104,127,1),
+      0 0 180px rgba(38,104,127,1);
+  }
+}
+.neon:hover {
+  /* transform: rotate(360deg); */
+  font-size: 1.5rem;
+}
+.icon-game {
+  width: 25px;
+  transition: all 0.5s ease-in-out;
+}
+.neon:hover .icon-game {
+  /* position: relative;
+  top: 30px;
+  right: -70px; */
+  width: 40px;
+
+}
+
+
 
 </style>
