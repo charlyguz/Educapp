@@ -1,9 +1,9 @@
 <template lang="">
-  <body>
+
     <main class="main">
       <section class="section__register container py-64 grid-2">
         <div class="section__register--left p-48 ">
-          <h2 class="section__register--left-title mb-32">Ingresa</h2>
+          <h2 class="section__register--left-title mb-32">Registrate</h2>
           <p class="section__register--left-description">Estas a un paso de tu mejor decisión. La educación es una parte
             fundamental en la vida. El tener la oportunidad de hacerlo una costumbre desde temprana edad es el mayor
             regalo que puedes recibir.
@@ -34,21 +34,21 @@
                   <label for="exampleInputPassword1" class="form-label">Password</label>
                   <input id="exampleInputPassword1" type="password" class="form-control">
                 </div>
-           
+            
 
 
             <div class="d-grid gap-2 mt-auto">
+
               <button class="btn btn-primary" type="button">Registrarse</button>
             </div>
             </form>
-             </div>
-    
+            </div>
           </div>
+
         </div>
       </section>
     </main>
 
-  </body>
 </template>
 
 <style scoped>

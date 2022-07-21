@@ -1,18 +1,10 @@
 <template>
-  <header class="header">
-    <h3>Bienvenido {{name}}</h3>
-    <nav class="navbar px-4">
-      <li><a href="" class="comunidad">Comunidad</a></li>
-      <li><a href="" class="agenda">Mi agenda</a> </li>
-      <li class="logo"><a href=""><img src="../../assets/imgs/logo.jpg" alt=""></a></li>
-      <li><a href="" class="progreso">Mi Progreso</a> </li>
-      <li><a href="" class="cursos">Mis Cursos</a> </li>
-    </nav>
-  </header>
-  <!-- notificaciones -->
-  <div class="px-4 w-100 my-4 d-flex justify-start">
+  <navbar link1="#so" name1="Comunidad" link2="#so" name2="Agenda" link3="#so"  link4="#so" name4="Progreso" link5="#so" name5="Mis Cursos"></navbar>
+  
+  <div class="container-xxl flex-wrap flex-md-nowrap m-auto">
+      <div class="px-4 w-100 my-4 d-flex justify-start">
     <h5>Notificaciones:</h5>
-  </div>
+      </div>
   <section class="progreso my-4 w-100 px-4">
     <div class="w-100 d-flex justify-content-between">
       <p>Tu progreso para cumplir tu meta</p>
@@ -76,6 +68,9 @@
     </div>
 
   </section>
+  </div>
+  <!-- notificaciones -->
+  
 
 </template>
 

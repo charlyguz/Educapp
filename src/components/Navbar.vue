@@ -1,67 +1,150 @@
 <template>
-  <header class="navbar navbar-expand-md navbar-dark bd-navbar">
-    <nav class="navbar navbar-expand-lg container-xxl flex-wrap flex-md-nowrap">
-      <div class="container-fluid d-flex">
-        <a class="navbar-brand" href="#">
-          <image
-            src="/favicon.svg"
-            class="nav-logo d-inline-block align-middle"
-            width="40"
-            height="40"
-          ></image>
-          <span class="fs-4"> Educapp </span>
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarTogglerDemo02"
-          aria-controls="navbarTogglerDemo02"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div id="navbarTogglerDemo02" class="collapse navbar-collapse">
-          <form class="d-flex">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="¿Qué estás buscando?"
-              aria-label="Buscar"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Buscar
-            </button>
-          </form>
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <router-link to="/estudiantes" class="nav-link fs-6 mx-1">¿Qué ofrecemos?</router-link>
-            </li>
-            <li class="nav-item">
-              <router-link to="/tutorias" class="nav-link fs-6 mx-1" href="#">Sobre Nosotros</router-link>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">¿Cómo usar?</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">Donaciones</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">Inicia Sesión</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">Registrate</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+  <header class="header">
+      <nav class="header__nav container">
+        <ul class="header__nav__ul">
+          <li class="header__nav__ul-li"><a :href="link1" class="header__nav_ul-li-a">{{name1}}</a> </li>
+          <li class="header__nav__ul-li"><a :href="link2" class="header__nav_ul-li-a">{{name2}}</a>
+          </li>
+          <li class="header__nav__ul-li header__nav-logo "><a :href="link3" class="header__nav_ul-li-a">Logo</a>
+          </li>
+          <li class="header__nav__ul-li"><a :href="link4" class="header__nav_ul-li-a">{{name4}}</a>
+          </li>
+          <li class="header__nav__ul-li"><a :href="link5" class="header__nav_ul-li-a">{{name5}}</a> </li>
+        </ul>
+      </nav>
+    </header>
 </template>
 
+<script>
+export default {
+  name: "Slider",
+  props: {
+    link1: String,
+    link2: String,
+    link3: String,
+    link4: String,
+    link5: String,
+    name1: String,
+    name2: String,
+    name4: String,
+    name5: String,
+  }
+};
+</script>
+
 <style scoped>
-.nav-logo {
-  border-radius: 100%;
+
+.header {
+  height: auto;
+  background-color: #445688;
+  height: 70px;
 }
+
+.header__nav {
+  display: flex;
+  height: 100%;
+}
+
+.header__nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav__ul-li {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.header__nav__ul-li-2 {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.header__nav_ul-li-a:link,
+.header__nav_ul-li-a:visited {
+  text-decoration: none;
+  color: #002169;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.header__nav__ul-li:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  transition: width 0.4s cubic-bezier(0.45, 0.05, 0.5, 0.1);
+  border-bottom: 2px solid black;
+}
+
+.header__nav__ul-li:hover:after {
+  width: 100%;
+}
+
+.primary-button:link,
+.primary-button:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: #002169;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 3px solid #002169;
+}
+
+.primary-button:active,
+.primary-button:hover {
+  padding: 1.2rem 2.4rem;
+  background-color: white;
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+.secundary-button:link,
+.secundary-button:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: #d9e3ff;
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 3px solid #d9e3ff;
+}
+
+.secundary-button:active,
+.secundary-button:hover {
+  padding: 1.2rem 2.4rem;
+  background-color: rgb(245, 240, 240);
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 3px solid rgb(245, 240, 240);
+}
+
+.container {
+  max-width: 1200px;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+ 
 </style>
