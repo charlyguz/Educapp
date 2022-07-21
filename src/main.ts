@@ -13,7 +13,7 @@ import 'bootstrap-icons/font/bootstrap-icons.css'
 // import 'bootstrap'
 
 // Import custom styles
-import './styles/main.css'
+// import './styles/main.css'
 
 const routes = setupLayouts(generatedRoutes.concat(customRoutes))
 

@@ -8,7 +8,7 @@ useHead({
     { name: 'description', content: 'Aprende jugando' },
     {
       name: 'theme-color',
-      content: computed(() => isDark.value ? '#00aba9' : '#ffffff'),
+      content: computed(() => (isDark.value ? '#00aba9' : '#ffffff')),
     },
   ],
   link: [
@@ -24,3 +24,7 @@ useHead({
 <template>
   <RouterView />
 </template>
+
+<style>
+@import '~/styles/global.css'
+</style>
