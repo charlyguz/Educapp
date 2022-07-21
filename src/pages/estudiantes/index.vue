@@ -22,8 +22,8 @@
       <a class="text-dark" href="">Ver mas</a>
     </div>
     <div class="progress progress-striped active">
-      <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%;">
-          Progreso: 40%<img class="logo-progress" src="../../assets/icons/cohete.png" alt="">
+      <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+          NIVEL: 20<img class="logo-progress" src="../../assets/icons/cohete.png" alt="">
       </div>
     </div>
   </section>
@@ -158,7 +158,6 @@ export default {
     animation: colorChange 10s ease-in-out infinite;
   }
   @keyframes colorChange {
-   /* cambiar entre 8 colores */
     0% {
       color: rgb(240, 12, 12);
     }
@@ -209,14 +208,6 @@ export default {
     background-color: #D9E3FF;
   }
   .progress-bar-purple {
-    /* background-image: linear-gradient(to right, #ffbf2b, #ff7300, #f91f06); */
-    /* position: absolute; */
-    /* width: 100vw;
-    height: 100vh; */
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* font-size: 45px; */
     font-weight: bold;
     background: linear-gradient(150deg, #ffb702,  #f16202, #f90303);
     background-size: 400% 300%;
@@ -229,7 +220,7 @@ export default {
 }
   .logo-progress {
     position: absolute;
-    left:40%;
+    left:20%;
     width: 40px;
     height: 40px;
   }
@@ -266,7 +257,7 @@ export default {
   .logo img {
     width: 50px;
   }
-  /* agregar sombra a las clase clses con hover */
+
   .clases {
     font-weight: bold;
     font-size: 1.2rem;
@@ -274,8 +265,9 @@ export default {
   .clases:hover{
     box-shadow: 0 0 10px #000;
   }
-
-/* poner comunidad:hover con el text-decoration de un color */
+  .comunidad, .agenda, .cursos, .progreso {
+    font-weight: bold;
+  }
 .comunidad:hover{
   text-decoration: underline;
   text-decoration-color: rgb(237, 156, 35);
