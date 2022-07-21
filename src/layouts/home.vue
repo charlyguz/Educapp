@@ -1,6 +1,9 @@
 <template>
-  <main class="px-4 py-10 text-gray-700 dark:text-gray-200">
-    <RouterView />
+  <main>
+    <Navbar></Navbar>
+    <div class="container-xxl flex-wrap flex-md-nowrap">
+      <RouterView />
+    </div>
     <Footer />
   </main>
 </template>

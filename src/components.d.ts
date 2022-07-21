@@ -12,6 +12,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./components/Footer.vue')['default']
     JitsiMeet: typeof import('./components/jitsi/JitsiMeet.vue')['default']
     LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
     README: typeof import('./components/README.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
