@@ -36,10 +36,10 @@
           </form>
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">¿Qué ofrecemos?</a>
+              <router-link to="/estudiantes" class="nav-link fs-6 mx-1">¿Qué ofrecemos?</router-link>
             </li>
             <li class="nav-item">
-              <a class="nav-link fs-6 mx-1" href="#">Sobre Nosotros</a>
+              <router-link to="/tutorias" class="nav-link fs-6 mx-1" href="#">Sobre Nosotros</router-link>
             </li>
             <li class="nav-item">
               <a class="nav-link fs-6 mx-1" href="#">¿Cómo usar?</a>
@@ -62,6 +62,6 @@
 
 <style scoped>
 .nav-logo {
-  /* border-radius: 100%; */
+  border-radius: 100%;
 }
 </style>

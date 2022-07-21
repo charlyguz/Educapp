@@ -6,7 +6,7 @@ const { t } = useI18n()
   <body>
 
     <div class="container">
-      <img src="../../public/imgs/404.svg" alt="">
+      <img src="/404.svg" alt="" />
         <h1>{{ t('La página que ha solicitado no se encuentra disponible') }}</h1>
         <div class="boton">
           <a href="/">Volver atras</a>
