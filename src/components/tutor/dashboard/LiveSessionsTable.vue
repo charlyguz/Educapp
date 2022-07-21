@@ -1,10 +1,16 @@
 <script setup lang="ts">
 import { MockLiveSession } from '~/util/types/mocking/mock-live-session'
 
+const router = useRouter()
+
 const props = defineProps<{
   headers: string[]
   liveSessions: MockLiveSession[]
 }>()
+
+function goMeeting(sessionId: string) {
+  router.push(`/tutorias/${encodeURIComponent(sessionId)}`)
+}
 </script>
 
 <template>
@@ -36,7 +42,7 @@ const props = defineProps<{
               <span class="bg-blight">{{ session.sessionId }}</span>
             </td>
             <td class="text-center">
-              <button type="button" class="btn btn-outline-primary">
+              <button type="button" class="btn btn-outline-primary" @click="goMeeting(session.sessionId)">
                 <span>Comenzar <i class="bi-arrow-right-short"></i></span>
               </button>
             </td>
