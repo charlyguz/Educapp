@@ -3,7 +3,7 @@
       <h4>Mis Cursos Publicos:</h4>
       <div class="search-container d-flex alig-items-center">
         <label for="search">
-          <img src="../../assets/icons/loupe.png" alt="buscador">
+          <img src="/icons/loupe.png" alt="buscador">
         </label>
         <input id="search" type="text" placeholder="Buscar...">
       </div>
@@ -19,19 +19,19 @@
    <div class="grupos-publicos">
       <div class="w-100 mx-4 row">
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/biologia.jpg" alt="portada biologia">
+          <img class="img w-100 img-fluid" src="/imgs/biologia.jpg" alt="portada biologia">
           <h4 class=" h-100 py-2 border-top border-dark">Fundamentos de biologia</h4>
           <p>Mi calificacion:</p>
           <p class="star"><span>5</span> &#9733;&#9733;&#9733;&#9733;&#9733; <span>(25)</span> </p>
         </a>
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/ciencias.jpg" alt="portada ciencias naturales">
+          <img class="img w-100 img-fluid" src="/imgs/ciencias.jpg" alt="portada ciencias naturales">
           <h4 class=" h-100 w-100 py-2 border-top border-dark">Ciencias Naturales</h4>
           <p>Mi calificacion:</p>
           <p class="star"><span>4 </span> &#9733;&#9733;&#9733;&#9733; <span>(25)</span> </p>
         </a>
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/matematicas.jpg" alt="portada matematicas">
+          <img class="img w-100 img-fluid" src="/imgs/matematicas.jpg" alt="portada matematicas">
           <h4 class=" w-100 h-100 py-2 border-top border-dark">Matematicas 1</h4>
           <p>Mi calificacion:</p>
           <p class="star"><span>5 </span>&#9733;&#9733;&#9733;&#9733;&#9733; <span>(35)</span></p>
@@ -42,7 +42,7 @@
       <h4>Mis Cursos Privados:</h4>
       <div class="search-container d-flex alig-items-center">
         <label for="search">
-          <img src="../../assets/icons/loupe.png" alt="buscador">
+          <img src="/icons/loupe.png" alt="buscador">
         </label>
         <input id="search" type="text" placeholder="Buscar...">
       </div>
@@ -129,7 +129,7 @@
   </section>
 
   <section v-show="isOpen"  class="ver-mas" @click="toggleClass">
-    <a href="#container"><img class="close-button" src="../../assets/icons/close.png" alt="boton para cerrar modal" @click="close"></a>
+    <a href="#container"><img class="close-button" src="/icons/close.png" alt="boton para cerrar modal" @click="close"></a>
     <div :class=" { 'bg-red': band==1, 'bg-ingles': band==2, 'bg-artes': band==3, 'bg-brown': band==4, 'bg-lectura': band==5, 'bg-historia': band==6 } " class="list-class-container" @click="noCerrar">
       <div>
         <ul>

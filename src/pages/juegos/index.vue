@@ -14,7 +14,7 @@
     <div class="w-100 row">
         <div href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 5 } "  class="img w-100 img-fluid" src="../../assets/imgs/cartas.png" alt="portada biologia">
+            <img :class=" { 'active': level < 5 } "  class="img w-100 img-fluid" src="/imgs/cartas.png" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span>5</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Juego de cartas</h4>
           </div>
@@ -24,7 +24,7 @@
         </div>
         <div  class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 10 } " class="img w-100 img-fluid" src="../../assets/imgs/memorama.png" alt="portada biologia">
+            <img :class=" { 'active': level < 10 } " class="img w-100 img-fluid" src="/imgs/memorama.png" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span class="text-weigth-bold">10</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Juego Memorama</h4>
           </div>
@@ -34,7 +34,7 @@
         </div>
         <div class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 15 } " class="img w-100 img-fluid" src="../../assets/imgs/pokemon.png" alt="portada biologia">
+            <img :class=" { 'active': level < 15 } " class="img w-100 img-fluid" src="/imgs/pokemon.png" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span class="text-weigth-bold">15</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Juego Pokemon</h4>
           </div>
@@ -46,7 +46,7 @@
       <div class="w-100 row">
         <div href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 20 } " class="img w-100 img-fluid" src="../../assets/imgs/snake.webp" alt="portada biologia">
+            <img :class=" { 'active': level < 20 } " class="img w-100 img-fluid" src="/imgs/snake.webp" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span class="text-weigth-bold">20</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Juego Snake</h4>
           </div>
@@ -56,7 +56,7 @@
         </div>
         <div href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 25 } " class="img w-100 img-fluid" src="../../assets/imgs/tarjeta.png" alt="portada biologia">
+            <img :class=" { 'active': level < 25 } " class="img w-100 img-fluid" src="/imgs/tarjeta.png" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span class="text-weigth-bold">25</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Tajeta de regalo</h4>
           </div>
@@ -66,7 +66,7 @@
         </div>
         <div  class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
           <div>
-            <img :class=" { 'active': level < 30 } " class="img w-100 img-fluid" src="../../assets/imgs/naves.png" alt="portada biologia">
+            <img :class=" { 'active': level < 30 } " class="img w-100 img-fluid" src="/imgs/naves.png" alt="portada biologia">
             <p class="nivel-game">Nivel Necesario: <span class="text-weigth-bold">30</span> </p>
             <h4 class="class_one h-100 py-4 border-top border-dark">Juego Naves</h4>
           </div>

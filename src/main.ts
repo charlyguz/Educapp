@@ -9,8 +9,8 @@ import customRoutes from '~/routes'
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
 // Bootstrap js files
-import '@popperjs/core'
-import 'bootstrap'
+// import '@popperjs/core'
+// import 'bootstrap'
 
 // Import custom styles
 // import './styles/main.css'

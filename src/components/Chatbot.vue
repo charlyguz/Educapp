@@ -12,7 +12,7 @@
 
 
       <div class="help-container">
-        <img class="help-img cancel" src="src\assets\imgs\chatbot.png" alt="" :onclick="closeForm">>
+        <img class="help-img cancel" src="/imgs/chatbot.png" alt="" :onclick="closeForm">>
         <p class="help-text" :onclick="closeForm">Necesitas ayuda?</p>
       </div>
     </div>
