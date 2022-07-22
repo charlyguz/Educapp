@@ -257,7 +257,10 @@ main {
 .btn-outline-primary {
   width: 25% !important;
   padding: .8rem !important;
+  font-size: 1.6rem;
 }
+
+
 
 .form-label {
   font-size: 1.6rem !important;

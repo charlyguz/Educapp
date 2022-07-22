@@ -259,17 +259,66 @@
                     </div>
                     <div class="modal-body">
                       <div class="modal-body-left">
+                        <h3 class="modal-body-left-title">¿Por qué donar?</h3>
+
                         <p class="modal-body-left-description">Esta plataforma es totalmente gratuita, por ello las donaciones son para fundamental para mantener la aplicación en funcionando.
 </p><br>
                       <p class="modal-body-left-description">Esto con la intención de poder seguir llegando a jovenes y sacar su potencial. Esto siendo fundamental en edades tempranas para poder encaminar a lo que ellos realmente quieren ser.</p>
+
+
                       </div>
                       <div class="modal-body-right">
+                        <div class="model-body-right-box">
+                          <div><p class="modal-body-right-title">Frecuencia de la donación</p>
+                          <div class="btn-group modal-body-right-div" role="group" aria-label="Basic radio toggle button group">
+                            <input id="btnradio1" type="radio" class="btn-check  " name="btnradio" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnradio1">Única vez</label>
 
+                            <input id="btnradio2" type="radio" class="btn-check " name="btnradio" autocomplete="off">
+                            <label class="btn btn-outline-primary " for="btnradio2">Mensualmente</label>
+                          </div>
+
+                          <p p class="modal-body-right-title ">Cantidad de la donación</p>
+                          <div class="btn-group modal-body-right-div"  role="group" aria-label="Basic radio toggle button group">
+                            <input id="btnradio3" type="radio" class="btn-check" name="btnradio2" autocomplete="off" checked>
+                            <label class="btn btn-outline-primary" for="btnradio3">$10</label>
+
+                            <input id="btnradio4" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio4">$20</label>
+
+                            <input id="btnradio5" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio5">$50</label>
+
+                            <input id="btnradio6" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio6">$100</label>
+
+                            <input id="btnradio7" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
+                            <label class="btn btn-outline-primary" for="btnradio7">Otro</label>
+                          </div>
+
+                          <form action="">
+                            <div class="modal-body-right-div">
+                              <label for="exampleInputEmail1" class="form-label modal-body-right-title ">Nombre</label>
+                              <input id="exampleInputEmail1" type="email" class="form-control modal-body-right-input" aria-describedby="emailHelp">
+
+                            </div>
+                            <div class="modal-body-right-div">
+                              <label for="exampleInputPassword1" class="form-label modal-body-right-title">Correo</label>
+                              <input id="exampleInputPassword1" type="email" class="form-control modal-body-right-input">
+                            </div>
+                          </form></div>
+                          
+                      
+                        <div class="row gap-3">
+                          <button class="btn btn-primary  btn-form-end col" type="button">Donar con tarjeta</button>
+                          <button class="btn btn-primary  btn-form-end col" type="button">Donar con Paypal</button>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
               
       
           </div>

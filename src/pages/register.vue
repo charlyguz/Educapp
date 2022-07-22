@@ -31,28 +31,39 @@
               <p class="section__register--right-title mb-3">Eres un...</p>
 
               <div class="btn-group btn-group-lg mb-3" role="group" aria-label="Basic outlined example">
-                <button type="button" class="btn btn-outline-primary">Maestro</button>
-                <button type="button" class="btn btn-outline-primary">Tutor</button>
-                <button type="button" class="btn btn-outline-primary">Padre</button>
-                <button type="button" class="btn btn-outline-primary">Alumno</button>
+                
+
+                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+  <input id="btnradio1" type="radio" class="btn-check" name="btnradio" autocomplete="off" checked>
+  <label class="btn btn-outline-primary" for="btnradio1">Maestro</label>
+
+  <input id="btnradio2" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio2">Tutor</label>
+
+  <input id="btnradio3" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">Padre</label>
+
+  <input id="btnradio3" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+  <label class="btn btn-outline-primary" for="btnradio3">Alumno</label>
+</div>
               </div>
 
               <form action="">
                 <div class="mb-3">
                   <label for="exampleInputEmail1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                  <input id="exampleInputEmail1" type="email" class="form-control" aria-describedby="emailHelp">
 
                 </div>
                 <div class="mb-3">
                   <label for="exampleInputPassword1" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="exampleInputPassword1">
+                  <input id="exampleInputPassword1" type="password" class="form-control">
                 </div>
               </form>
             </div>
 
 
             <div class="d-grid gap-2 mt-auto">
-              <button class="btn btn-primary" type="button">Registrarse</button>
+              <button class="btn btn-primary" type="button">Ingresar</button>
             </div>
            
           </div>
