@@ -1,3 +1,3 @@
-# Educapp
+# Eduhack
 
-Hackeando la educación
+##Hackeando la educación
