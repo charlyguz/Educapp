@@ -1,13 +1,14 @@
 <script setup lang="ts">
-import { useTutorLiveSessionsQuery } from '../../generated/operations'
+import {
+  MockLiveSession,
+  useTutorLiveSessionsQuery,
+} from '~/generated/operations'
 
-const { scheduleSession } = useTutorStore()
-const { result: data, loading, onResult } = useTutorLiveSessionsQuery()
-const { liveSessions: lives } = useTutorStore()
+const { loading, onResult } = useTutorLiveSessionsQuery()
+const tutorStore = useTutorStore()
 
 onResult((res) => {
-  console.debug(res)
-  console.debug(lives)
+  tutorStore.initializeSessions(res.data?.liveSessions as MockLiveSession[])
 })
 
 const tableHeaders = [
@@ -17,12 +18,10 @@ const tableHeaders = [
   'Acciones',
 ]
 
-// const liveSessions = data.value?.liveSessions
-
 const schedule = (value: { date: Date; studentId: string }) => {
   if (!(value.date && value.studentId)) return
 
-  scheduleSession(value.date, value.studentId)
+  tutorStore.scheduleSession(value.date, value.studentId)
 }
 </script>
 
@@ -60,8 +59,8 @@ const schedule = (value: { date: Date; studentId: string }) => {
     <span class="visually-hidden">Cargando...</span>
   </div>
   <live-sessions-table
-    v-if="data?.liveSessions"
-    :live-sessions="data.liveSessions"
+    v-if="tutorStore?.liveSessions"
+    :live-sessions="tutorStore.liveSessions"
     :headers="tableHeaders"
   ></live-sessions-table>
 </template>

@@ -3,7 +3,7 @@ import { ref } from 'vue'
 import Datepicker from '@vuepic/vue-datepicker'
 import '@vuepic/vue-datepicker/dist/main.css'
 
-const { students } = useTutorStore()
+const tutorStore = useTutorStore()
 
 const date = ref()
 const emit = defineEmits<{
@@ -44,8 +44,8 @@ const schedule = () => {
             aria-label="Escoger estudiante"
           >
             <option
-              v-for="student in students"
-              :key="student.id"
+              v-for="(student, index) in tutorStore.students"
+              :key="student.id || index"
               :value="student.id"
             >
               {{ student.name }}

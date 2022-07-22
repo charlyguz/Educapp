@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { JitsiMeetExternalApiOptions } from '~/util/types/jitsi'
 
-const { name } = useTutorStore()
+const tutorStore = useTutorStore()
 
 const props = defineProps<{
   roomName: string
@@ -11,7 +11,7 @@ const domain = 'meet.jit.si'
 const options: JitsiMeetExternalApiOptions = {
   roomName: props.roomName,
   userInfo: {
-    displayName: name,
+    displayName: tutorStore.name,
     email: 'email@mail.com'
   },
   configOverwrite: {
