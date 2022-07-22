@@ -8,7 +8,7 @@
           <li class="header__nav__ul-li"><a href="#funciona" class="header__nav_ul-li-a">¿Cómo funciona?</a> </li>
           <li class="header__nav__ul-li header__nav-logo "><a href="#" class="header__nav_ul-li-a">Logo</a> </li>
           <li class="header__nav__ul-li"><a href="#donaciones" class="header__nav_ul-li-a">Donaciones</a> </li>
-          <li class="header__nav__ul-li"><a href="./login.html" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
+          <li class="header__nav__ul-li"><a href="./login.vue" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
           <li class="header__nav__ul-li-2"><a href="./login.html" class="primary-button mr-18 ">¡Empieza hoy!</a></li>
         </ul>
       </nav>
