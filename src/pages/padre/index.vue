@@ -77,7 +77,6 @@
           
       </div>
       <div class="container_stats">
-        
             <div class="stats">
               <h3 class="stats_hijo">Estadisticas de Jose Salazar</h3>
                 <img src="https://i0.wp.com/www.recursoseso.com/wp-content/uploads/2020/07/bannerEstadistica1.jpg?resize=1024%2C512&ssl=1" alt="">
