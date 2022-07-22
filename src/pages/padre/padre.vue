@@ -208,8 +208,6 @@ margin:20px;
     border: 1px black solid;
     background-color: #fff;
     cursor: pointer;
-    position: relative;
-    right: -10px;
  
   }
   .help-text {
