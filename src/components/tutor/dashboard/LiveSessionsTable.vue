@@ -3,7 +3,7 @@ import { Query } from '~/generated/operations'
 import { SPANISH_MESSAGES } from '~/util/constants/time-ago'
 import { differenceInMinutes } from '~/util/date'
 
-const { minuteThreshold } = useTutorStore()
+const tutorStore = useTutorStore()
 
 const router = useRouter()
 
@@ -16,7 +16,7 @@ const now = new Date()
 
 function inThreshold(date: Date) {
   // console.log(differenceInMinutes(now, date))
-  return differenceInMinutes(date, now) < minuteThreshold
+  return differenceInMinutes(date, now) < tutorStore.minuteThreshold
 }
 
 function formatDate(date: Date) {
