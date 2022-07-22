@@ -55,6 +55,12 @@ export default {
     display: flex;
     justify-content: space-between;
     padding: 2.4rem;
+    align-items: center;
+  }
+
+  .section__comunidad-container-header-title {
+    margin: 0;
+    font-size: 2rem;
   }
 
   .section__comunidad-container-header-description {
@@ -66,5 +72,10 @@ export default {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 2rem;
+  }
+
+  .btn-primary {
+    font-size: 1.6rem;
+    padding: .4rem .8rem;
   }
 </style>
