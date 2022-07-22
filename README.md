@@ -9,3 +9,5 @@ link de nuestra página [Educapp](https://ejemplo.com/ "Educapp").
 
 Click [vídeo demostración ](https://youtu.be/VaTzodcHDbU).
 
+## Bienvenidos a Educapp 
+Bienvenidos a educapp, en esta plataforma buscamos eliminar el rezago académico, el cual surgió en  México a raíz de la pandemia de covid, dando solución a esta problemática desarrollamos una app desde una perspectiva más eficaz  que además de ser accesible, es un espectáculo visual que logra captar su atención en las materias de siempre pero con un enfoque más amigable, dentro de ella podrán encontrar juegos, vídeos, archivos, clases y asesorías personalizadas etc.. que son de su interés además de ser 100% gratis
