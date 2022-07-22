@@ -252,7 +252,7 @@ margin:20px;
     font-size: 1.5rem;
     font-weight: bold;
     color: #fff;
-    psoition : relative;
+    position: relative;
     bottom: 10vw;
     right: 50%;
   }
