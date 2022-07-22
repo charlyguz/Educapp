@@ -8,8 +8,8 @@ declare global {
   const $ref: typeof import('vue/macros')['$ref']
   const $shallowRef: typeof import('vue/macros')['$shallowRef']
   const $toRef: typeof import('vue/macros')['$toRef']
-  const AllCoursesDocument: typeof import('./generated/operations')['AllCoursesDocument']
   const EffectScope: typeof import('vue')['EffectScope']
+  const TutorLiveSessionsDocument: typeof import('./generated/operations')['TutorLiveSessionsDocument']
   const asyncComputed: typeof import('@vueuse/core')['asyncComputed']
   const autoResetRef: typeof import('@vueuse/core')['autoResetRef']
   const computed: typeof import('vue')['computed']
@@ -110,8 +110,6 @@ declare global {
   const unrefElement: typeof import('@vueuse/core')['unrefElement']
   const until: typeof import('@vueuse/core')['until']
   const useActiveElement: typeof import('@vueuse/core')['useActiveElement']
-  const useAllCoursesLazyQuery: typeof import('./generated/operations')['useAllCoursesLazyQuery']
-  const useAllCoursesQuery: typeof import('./generated/operations')['useAllCoursesQuery']
   const useAsyncQueue: typeof import('@vueuse/core')['useAsyncQueue']
   const useAsyncState: typeof import('@vueuse/core')['useAsyncState']
   const useAttrs: typeof import('vue')['useAttrs']
@@ -234,6 +232,8 @@ declare global {
   const useTitle: typeof import('@vueuse/core')['useTitle']
   const useToggle: typeof import('@vueuse/core')['useToggle']
   const useTransition: typeof import('@vueuse/core')['useTransition']
+  const useTutorLiveSessionsLazyQuery: typeof import('./generated/operations')['useTutorLiveSessionsLazyQuery']
+  const useTutorLiveSessionsQuery: typeof import('./generated/operations')['useTutorLiveSessionsQuery']
   const useTutorStore: typeof import('./store/tutor')['useTutorStore']
   const useUrlSearchParams: typeof import('@vueuse/core')['useUrlSearchParams']
   const useUserMedia: typeof import('@vueuse/core')['useUserMedia']
@@ -275,8 +275,8 @@ declare module '@vue/runtime-core' {
     readonly $ref: UnwrapRef<typeof import('vue/macros')['$ref']>
     readonly $shallowRef: UnwrapRef<typeof import('vue/macros')['$shallowRef']>
     readonly $toRef: UnwrapRef<typeof import('vue/macros')['$toRef']>
-    readonly AllCoursesDocument: UnwrapRef<typeof import('./generated/operations')['AllCoursesDocument']>
     readonly EffectScope: UnwrapRef<typeof import('vue')['EffectScope']>
+    readonly TutorLiveSessionsDocument: UnwrapRef<typeof import('./generated/operations')['TutorLiveSessionsDocument']>
     readonly asyncComputed: UnwrapRef<typeof import('@vueuse/core')['asyncComputed']>
     readonly autoResetRef: UnwrapRef<typeof import('@vueuse/core')['autoResetRef']>
     readonly computed: UnwrapRef<typeof import('vue')['computed']>
@@ -377,8 +377,6 @@ declare module '@vue/runtime-core' {
     readonly unrefElement: UnwrapRef<typeof import('@vueuse/core')['unrefElement']>
     readonly until: UnwrapRef<typeof import('@vueuse/core')['until']>
     readonly useActiveElement: UnwrapRef<typeof import('@vueuse/core')['useActiveElement']>
-    readonly useAllCoursesLazyQuery: UnwrapRef<typeof import('./generated/operations')['useAllCoursesLazyQuery']>
-    readonly useAllCoursesQuery: UnwrapRef<typeof import('./generated/operations')['useAllCoursesQuery']>
     readonly useAsyncQueue: UnwrapRef<typeof import('@vueuse/core')['useAsyncQueue']>
     readonly useAsyncState: UnwrapRef<typeof import('@vueuse/core')['useAsyncState']>
     readonly useAttrs: UnwrapRef<typeof import('vue')['useAttrs']>
@@ -501,6 +499,8 @@ declare module '@vue/runtime-core' {
     readonly useTitle: UnwrapRef<typeof import('@vueuse/core')['useTitle']>
     readonly useToggle: UnwrapRef<typeof import('@vueuse/core')['useToggle']>
     readonly useTransition: UnwrapRef<typeof import('@vueuse/core')['useTransition']>
+    readonly useTutorLiveSessionsLazyQuery: UnwrapRef<typeof import('./generated/operations')['useTutorLiveSessionsLazyQuery']>
+    readonly useTutorLiveSessionsQuery: UnwrapRef<typeof import('./generated/operations')['useTutorLiveSessionsQuery']>
     readonly useTutorStore: UnwrapRef<typeof import('./store/tutor')['useTutorStore']>
     readonly useUrlSearchParams: UnwrapRef<typeof import('@vueuse/core')['useUrlSearchParams']>
     readonly useUserMedia: UnwrapRef<typeof import('@vueuse/core')['useUserMedia']>

@@ -1,5 +1,14 @@
 <script setup lang="ts">
-const { liveSessions, scheduleSession } = useTutorStore()
+import { useTutorLiveSessionsQuery } from '../../generated/operations'
+
+const { scheduleSession } = useTutorStore()
+const { result: data, loading, onResult } = useTutorLiveSessionsQuery()
+const { liveSessions: lives } = useTutorStore()
+
+onResult((res) => {
+  console.debug(res)
+  console.debug(lives)
+})
 
 const tableHeaders = [
   'Estudiante',
@@ -7,6 +16,8 @@ const tableHeaders = [
   'ID de la sesión',
   'Acciones',
 ]
+
+// const liveSessions = data.value?.liveSessions
 
 const schedule = (value: { date: Date; studentId: string }) => {
   if (!(value.date && value.studentId)) return
@@ -16,7 +27,6 @@ const schedule = (value: { date: Date; studentId: string }) => {
 </script>
 
 <template>
-
   <!-- Modal -->
   <div
     id="addMentorship"
@@ -46,8 +56,12 @@ const schedule = (value: { date: Date; studentId: string }) => {
       </button>
     </div>
   </div>
+  <div v-if="loading" class="spinner-border" role="status">
+    <span class="visually-hidden">Cargando...</span>
+  </div>
   <live-sessions-table
-    :live-sessions="liveSessions"
+    v-if="data?.liveSessions"
+    :live-sessions="data.liveSessions"
     :headers="tableHeaders"
   ></live-sessions-table>
 </template>
