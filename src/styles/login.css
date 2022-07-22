@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Roboto", sans-serif;
+  text-rendering: optimizeLegibility;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: Roboto, sans-serif;
+  line-height: 1.2;
+  
+}
+
+/* CLASES REUSABLES */
+
+/* Contenedores */
+.container {
+  max-width: 1200px ;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+/* Buttons */
+
+.primary-button:link,
+.primary-button:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: #002169;
+  color: white;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 3px solid #002169;
+}
+
+.primary-button:active,
+.primary-button:hover {
+  padding: 1.2rem 2.4rem;
+  background-color: white;
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  animation-fill-mode: forwards;
+}
+
+.secundary-button:link,
+.secundary-button:visited {
+  padding: 1.2rem 2.4rem;
+  background-color: #d9e3ff;
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  border: 3px solid #d9e3ff;
+}
+
+.secundary-button:active,
+.secundary-button:hover {
+  padding: 1.2rem 2.4rem;
+  background-color: rgb(245, 240, 240);
+  color: #002169;
+  border-radius: 0.8rem;
+  font-weight: 700;
+  font-size: 1.6rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 3px solid rgb(245, 240, 240);
+}
+
+/* Margin */
+
+.mt-100 {
+  margin-top: 10rem;
+}
+
+.mt-48 {
+  margin-top: 4.8rem;
+}
+
+.mb-16 {
+  margin-bottom: 1.6rem;
+}
+
+.mb-48 {
+  margin-bottom: 4.8rem;
+}
+
+.mb-100 {
+  margin-bottom: 10rem;
+}
+
+.mb-32 {
+  margin-bottom: 3.2rem;
+}
+
+.mr-18 {
+  margin-right: 1.8rem;
+}
+
+.pb-160 {
+  padding-bottom: 16rem;
+}
+
+.py-48 {
+  padding: 4.8rem 0;
+}
+
+.py-100 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.my-100 {
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+}
+
+.my-64 {
+  margin-top: 6.4rem;
+  margin-bottom: 6.4rem;
+}
+
+.p-48 {
+  padding: 4.8rem;
+}
+
+.py-64 {
+  padding: 6.4rem;
+}
+
+.header {
+  height: auto;
+  background-color: #d9e3ff;
+  height: 70px;
+}
+
+.header__nav {
+  display: flex;
+  height: 100%;
+}
+
+.header__nav__ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header__nav__ul-li {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.header__nav__ul-li-2 {
+  display: inline-block;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  font-size: 1.6rem;
+  position: relative;
+}
+
+.header__nav_ul-li-a:link,
+.header__nav_ul-li-a:visited {
+  text-decoration: none;
+  color: #002169;
+  -webkit-font-smoothing: antialiased;
+  position: relative;
+}
+
+.header__nav__ul-li:after {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  transition: width 0.4s cubic-bezier(0.45, 0.05, 0.5, 0.1);
+  border-bottom: 2px solid black;
+}
+
+.header__nav__ul-li:hover:after {
+  width: 100%;
+}
+
+/* SECTION REGISTER */
+main {
+  background-color: #6e8de4;
+}
+
+.section__register {
+  width: 100%;
+  min-height: calc(100vh - 7em);
+  border-radius: 0.8rem;
+}
+
+.section__register--left {
+  background-color: #002169;
+  color: white;
+  border-radius: .8rem 0 0 .8rem;
+}
+
+.section__register--left-title {
+  font-size: 3.2rem;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.section__register--left-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+
+  max-width: 320px;
+  margin: 3.2rem auto;
+}
+
+.section__register--right {
+  width: 100%;
+  background-color: white;
+  border-radius: 0 .8rem .8rem 0;
+}
+
+.section__register--right-container {
+  max-width: 400px;
+  margin: 4.8rem auto;
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 10rem);
+}
+
+.section__register--right-title {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.btn-group {
+  width: 100%;
+}
+
+.btn-outline-primary {
+  width: 25% !important;
+  padding: .8rem !important;
+  font-size: 1.6rem;
+}
+
+
+
+.form-label {
+  font-size: 1.6rem !important;
+}
+
+.form-control {
+  font-size: 1.6rem;
+}
+
+.btn-primary {
+  font-size: 1.6rem !important;
+  padding: .8rem 1.2rem !important;
+}

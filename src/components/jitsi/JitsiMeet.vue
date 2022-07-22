@@ -1,5 +1,5 @@
 <template>
-  <div ref="jitsiContainer" style="height: 100%; width: 100%"></div>
+  <div ref="jitsiContainer" style="height: 50em; width: 100%"></div>
 </template>
 
 <script>

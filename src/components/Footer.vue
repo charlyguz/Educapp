@@ -1,33 +1,118 @@
-<script setup lang="ts">
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>
-
 <template>
-  <nav text-xl mt-6>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
-    </RouterLink>
+  <footer class="bd-footer py-5 bg-light">
+    <div class="container-xxl flex-wrap flex-md-nowrap">
+      <div class="row">
+        <div class="col-2">
+          <h5>Sobre nosotros</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Inicio</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
+        <div class="col-2">
+          <h5>Section</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link p-0 text-muted">About</a>
+            </li>
+          </ul>
+        </div>
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <div i-carbon-dicom-overlay />
-    </RouterLink>
+        <div class="col-4 offset-1">
+          <form>
+            <h5>Suscríbete para recibir más información</h5>
+            <p>Para estar al tanto de nuevo contenido</p>
+            <div class="d-flex w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden"
+                >Tu dirección de correo</label
+              >
+              <div class="fx-relay-email-input-wrapper">
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Tu dirección de correo"
+                  style="padding-right: 42px"
+                />
+              </div>
+              <button class="btn btn-primary" type="button">Suscribirme</button>
+            </div>
+          </form>
+        </div>
+      </div>
 
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
-  </nav>
+      <div class="d-flex justify-content-between py-4 my-4 border-top">
+        <p>© 2022 Educapp Inc. Todos los derechos reservados.</p>
+        <ul class="list-unstyled d-flex">
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <i class="bi-twitter"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <i class="bi-instagram"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <i class="bi-facebook"></i>
+            </a>
+          </li>
+          <li class="ms-3">
+            <a class="link-dark" href="#">
+              <i class="bi-youtube"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
 </template>

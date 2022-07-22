@@ -37,26 +37,18 @@ const tableHeaders = [
 </script>
 
 <template>
-  <div class="container">
-    <div class="row">
-      <div class="col"></div>
-      <div class="col-10">
-        <div class="d-flex align-items-center">
-          <div class="p-2 flex-grow-1">
-            <span class="fs-1">Mis tutorías</span>
-          </div>
-          <div class="p-2">
-            <button type="button" class="btn btn-success">Agendar tutoría</button>
-          </div>
-        </div>
-        <live-sessions-table
-          :live-sessions="liveSessions"
-          :headers="tableHeaders"
-        ></live-sessions-table>
-      </div>
-      <div class="col"></div>
+  <div class="d-flex align-items-center">
+    <div class="p-2 flex-grow-1">
+      <span class="fs-1">Mis tutorías</span>
+    </div>
+    <div class="p-2">
+      <button type="button" class="btn btn-success">Agendar tutoría</button>
     </div>
   </div>
+  <live-sessions-table
+    :live-sessions="liveSessions"
+    :headers="tableHeaders"
+  ></live-sessions-table>
 </template>
 
 <route lang="yaml">
