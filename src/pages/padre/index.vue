@@ -34,6 +34,8 @@
           </div>
         </div>
       </nav>
+
+      
       <div class="img">
         <img src="https://4.bp.blogspot.com/-Js496fql3IY/V-44b4hDdzI/AAAAAAAABNk/QoHu8dk9epYilxzwmL_7UzLXEpwq2DuawCLcB/s1600/people-316506_1280.jpg" class="img-fluid" alt="..."> 
       </div>
@@ -74,7 +76,13 @@
           </div>
           
       </div>
-
+      <div class="container_stats">
+        
+            <div class="stats">
+              <h3 class="stats_hijo">Estadisticas de Jose Salazar</h3>
+                <img src="https://i0.wp.com/www.recursoseso.com/wp-content/uploads/2020/07/bannerEstadistica1.jpg?resize=1024%2C512&ssl=1" alt="">
+            </div>
+      </div>
       <section class="help-section">
         <div class="help-container">
           <div>
@@ -104,7 +112,8 @@
           </div>
               
         </div>
-        </footer>
+      </footer>
+
 
 
         
@@ -129,27 +138,41 @@
     background-color: #f5f5f5;
 
 }
+
+.container_stats{
+  width: 100%;
+  height: 50%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .img-fluid{
     position: relative;
     left: 18vw;
-    width: 60vw;
+    width: 50vw;
 }
 .img{
-    
-    padding-top: 50px;
-    padding-bottom: 50px;
-    margin: 20px;
+    justify-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 .lead{
-    margin: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 15px;
-    padding-top: 50px;
-    padding-bottom: 50px;
     padding-left: 50px;
     padding-right: 50px;
-}
+    background-image: linear-gradient(to left, #fff, #f0ea3e);
+    border-radius: 50px;
+      }
 .text-center{
-    margin-top: 50px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    margin-top: 1%;
+    margin-bottom: 1%;
     font-size: 20px;
     text-align: center;
     padding-top: 10px;
@@ -165,7 +188,7 @@
     padding-left: 30px;
     padding-right: 30px;
     flex-direction: row;
-    background-color: #46e39f;
+    background-image: linear-gradient(#fff, #41c9fa);
     border-radius: 30px;
     position : relative;
     left: 15vw;
@@ -173,8 +196,44 @@
 }
 .card{
 margin:20px;
+width: 50%;
+height: 100%;
 }
 
+.card:hover {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.container_stats{
+    display: flex;
+    margin-top: 1%;
+    flex-direction: row;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+    position : relative;
+    left: 10vw;
+    width: 75%;
+    justify-content: center;
+}
+
+.stats_hijo{
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+    height: 10%;
+    width: 100%;
+    position: relative;
+    z-index: 30;
+}
+.stats img{
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 10%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    z-index: 20;
+}
 .display-6{
     font-size: 30px;
     padding-top: 10px;
@@ -194,8 +253,8 @@ margin:20px;
 }
 
 .help-container {
-    width: 100%;
-    height: 20vh;
+    width: 90%;
+    height: 10vh;
     display: flex;
     justify-content: end;
     align-items: center;
@@ -208,7 +267,6 @@ margin:20px;
     border: 1px black solid;
     background-color: #fff;
     cursor: pointer;
- 
   }
   .help-text {
     /* font-size: 1.5rem; */
@@ -234,7 +292,8 @@ margin:20px;
     width: 40vw;
     height: 75%;
     display: flex
-
+    flex-direction row;
+    justify-content: space-between 0, 0, 1;
   }
   .quick-links {
     width: 100%;
@@ -286,6 +345,8 @@ margin:20px;
       font-size: 1rem;
     }
   }
+
+
 
 
 
