@@ -396,6 +396,45 @@ html {
   border: 3px solid rgb(245, 240, 240);
 }
 
+.modal-body {
+  min-height: 80vh;
+}
+
+.modal-header {
+  padding: 4.2rem;
+  background-color: #fff ;
+}
+
+.modal-title {
+  font-size: 2.4rem;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-body-left {
+  background-color: #002169;
+  height: 100%;
+  border-radius: 0 0 .4rem .4rem;
+  padding-top: 4.2rem;
+}
+
+.modal-body-right {
+  background-color: #d9e3ff;
+  height: 100%;
+  border-radius: 0 0 .4rem .4rem ;
+}
+
+.modal-body-left-description {
+  color: #fff;
+  font-size: 2rem;
+  padding: 0 4.2rem;
+}
+
 /* FOOTER */
 
 .footer {

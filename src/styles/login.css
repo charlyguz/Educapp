@@ -256,12 +256,18 @@ main {
 
 .btn-outline-primary {
   width: 25% !important;
+  padding: .8rem !important;
 }
 
 .form-label {
+  font-size: 1.6rem !important;
+}
+
+.form-control {
   font-size: 1.6rem;
 }
 
 .btn-primary {
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
+  padding: .8rem 1.2rem !important;
 }

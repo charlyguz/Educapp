@@ -8,8 +8,8 @@
           <li class="header__nav__ul-li"><a href="#funciona" class="header__nav_ul-li-a">¿Cómo funciona?</a> </li>
           <li class="header__nav__ul-li header__nav-logo "><a href="#" class="header__nav_ul-li-a">Logo</a> </li>
           <li class="header__nav__ul-li"><a href="#donaciones" class="header__nav_ul-li-a">Donaciones</a> </li>
-          <li class="header__nav__ul-li"><a href="./login.html" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
-          <li class="header__nav__ul-li-2"><a href="./login.html" class="primary-button mr-18 ">¡Empieza hoy!</a></li>
+          <li class="header__nav__ul-li"><a href="./login" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
+          <li class="header__nav__ul-li-2"><a href="./register" class="primary-button mr-18 ">¡Empieza hoy!</a></li>
         </ul>
       </nav>
     </header>
@@ -242,11 +242,36 @@
               poder encaminar a lo que ellos realmente quieren ser.
             </p>
 
-            <a
+
+              <a
               href="#"
               class="secundary-button section__ofrecemos-grid-box-button"
-              >¡Dona ahora!</a
-            >
+               data-bs-toggle="modal" data-bs-target="#exampleModal"
+              >¡Dona ahora!</a>
+
+              <!-- Modal -->
+              <div id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal-xl">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2 id="exampleModalLabel" class="modal-title">Dona para poder seguir enseñando</h2>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <div class="modal-body-left">
+                        <p class="modal-body-left-description">Esta plataforma es totalmente gratuita, por ello las donaciones son para fundamental para mantener la aplicación en funcionando.
+</p><br>
+                      <p class="modal-body-left-description">Esto con la intención de poder seguir llegando a jovenes y sacar su potencial. Esto siendo fundamental en edades tempranas para poder encaminar a lo que ellos realmente quieren ser.</p>
+                      </div>
+                      <div class="modal-body-right">
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+      
           </div>
           <div class="section__donaciones-grid-right">
             <img src="/landing/donacion.svg" alt="" />
