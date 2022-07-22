@@ -1,6 +1,8 @@
 <script setup lang="ts">
 import { JitsiMeetExternalApiOptions } from '~/util/types/jitsi'
 
+const { name } = useTutorStore()
+
 const props = defineProps<{
   roomName: string
 }>()
@@ -8,6 +10,10 @@ const props = defineProps<{
 const domain = 'meet.jit.si'
 const options: JitsiMeetExternalApiOptions = {
   roomName: props.roomName,
+  userInfo: {
+    displayName: name,
+    email: 'email@mail.com'
+  },
   configOverwrite: {
     enableNoisyMicDetection: false,
   },
@@ -21,7 +27,11 @@ const options: JitsiMeetExternalApiOptions = {
 
 <template>
   <div>
-    <jitsi-meet :domain="domain" :options="options" class="embedded-jitsi"></jitsi-meet>
+    <jitsi-meet
+      :domain="domain"
+      :options="options"
+      class="embedded-jitsi"
+    ></jitsi-meet>
   </div>
 </template>
 
