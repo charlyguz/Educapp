@@ -1,5 +1,9 @@
 <template>
+<<<<<<< HEAD
   <footer class="bd-footer bg-light">
+=======
+  <footer class="bd-footer py-5 bg-light">
+>>>>>>> b9836533f2386789dfc8be2cedfe389fcc0f4940
     <div class="container-xxl flex-wrap flex-md-nowrap">
       <div class="row">
         <div class="col-2">

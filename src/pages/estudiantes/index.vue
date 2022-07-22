@@ -73,13 +73,7 @@
       </div>
     </div>
   </section>
-  <section class="help-section px-4">
-    <div class="help-container">
-      <img class="help-img" src="../../assets/imgs/chatbot.png" alt="">
-      <p class="help-text">Necesitas ayuda?</p>
-    </div>
-
-  </section>
+  <chatbot></chatbot>
   </div>
   <!-- notificaciones -->
 

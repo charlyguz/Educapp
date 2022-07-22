@@ -396,6 +396,95 @@ html {
   border: 3px solid rgb(245, 240, 240);
 }
 
+.modal-body {
+  min-height: 80vh;
+}
+
+.modal-header {
+  padding: 4.2rem;
+  background-color: #fff ;
+}
+
+.modal-title {
+  font-size: 3.2rem;
+}
+
+.modal-body {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  padding: 0;
+  width: 100%;
+}
+
+.modal-body-left {
+  background-color: #002169;
+  height: 100%;
+  border-radius: 0 0 .4rem .4rem;
+  padding-top: 4.2rem;
+}
+
+.modal-body-right {
+  background-color: #d9e3ff;
+  height: 100%;
+  border-radius: 0 0 .4rem .4rem ;
+  padding: 4.2rem;
+}
+
+.model-body-right-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.modal-body-right-title {
+  font-size: 2rem;
+  color: #000;
+  margin-bottom: 1rem;
+}
+
+.modal-body-right-input {
+  font-size: 1.6rem;
+}
+
+.modal-body-right-div {
+  margin-bottom: 2rem;
+}
+
+.modal-body-left-description {
+  color: #fff;
+  font-size: 1.6rem;
+  padding: 0 4.2rem;
+  
+}
+
+.modal-body-left-title {
+  font-size: 2.4rem;
+  margin: 0 auto;
+  color: #fff;
+  padding: 0 4.2rem;
+  margin-bottom: 3.2rem;
+}
+
+.btn-outline-primary {
+  font-size: 1.6rem;
+}
+
+.row {
+  margin: 0;
+  
+  
+}
+
+.btn-form-end {
+  width: auto;
+}
+
+.btn-primary {
+  font-size: 1.6rem !important;
+  padding: .8rem 1.2rem !important;
+}
+
 /* FOOTER */
 
 .footer {
