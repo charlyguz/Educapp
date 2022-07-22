@@ -4,7 +4,7 @@
     <nav class="navbar px-4">
       <li><a href="./comunidad" class="comunidad">Comunidad</a></li>
       <li><a href="" class="agenda">Mi agenda</a> </li>
-      <li class="neon"><a href="/juegos"><img class="icon-game" src="../../assets/icons/play.png" alt=""> JUEGOS</a></li>
+      <li class="neon"><a href="/juegos"><img class="icon-game" src="/icons/play.png" alt=""> JUEGOS</a></li>
       <li><a href="" class="progreso">Mi Progreso</a> </li>
       <li><a href="" class="cursos">Mis Cursos</a> </li>
     </nav>
@@ -20,7 +20,7 @@
     </div>
     <div class="progress progress-striped active">
       <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-          NIVEL: 20<img class="logo-progress" src="../../assets/icons/cohete.png" alt="">
+          NIVEL: 20<img class="logo-progress" src="/icons/cohete.png" alt="">
       </div>
     </div>
   </section>
@@ -32,18 +32,18 @@
     <div class="w-100">
       <div class="w-100 row">
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/biologia.jpg" alt="portada biologia">
+          <img class="icon-play" src="/icons/play_button.png" alt="">
+          <img class="img w-100 img-fluid" src="/imgs/biologia.jpg" alt="portada biologia">
           <h4 class="class_one h-100 py-4 border-top border-dark">Fundamentos de biologia</h4>
         </a>
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/ciencias.jpg" alt="portada ciencias naturales">
+          <img class="icon-play" src="/icons/play_button.png" alt="">
+          <img class="img w-100 img-fluid" src="/imgs/ciencias.jpg" alt="portada ciencias naturales">
           <h4 class="class_two h-100 w-100 py-4 border-top border-dark">Ciencias Naturales</h4>
         </a>
         <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="../../assets/imgs/matematicas.jpg" alt="portada matematicas">
+          <img class="icon-play" src="/icons/play_button.png" alt="">
+          <img class="img w-100 img-fluid" src="/imgs/matematicas.jpg" alt="portada matematicas">
           <h4 class="class_three w-100 h-100 py-4 border-top border-dark">Matematicas 1</h4>
         </a>
       </div>
