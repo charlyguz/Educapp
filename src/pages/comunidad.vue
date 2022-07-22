@@ -3,12 +3,14 @@
   <section class="section__comunidad container">
       <div class="section__comunidad-container">
           <div class="section__comunidad-container-header">
-            <h2 class="section__comunidad-container-header-title">Comunidad</h2>
+            <h2 class="section__comunidad-container-header-title global-title">Comunidad</h2>
 
             <div class="section__comunidad-container-header-buttons">
-              <button class="section__comunidad-container-header-button mis-publicaciones-button btn btn-primary ">Mis publicaciones</button>
-              <button class="section__comunidad-container-header-button crear-publicaciones-button btn btn-primary ">Crear publicación</button>
-              <button class="section__comunidad-container-header-button filtros-button btn btn-primary ">Filtros</button>
+              <button class="section__comunidad-container-header-button mis-publicaciones-button btn btn-outline-primary ">Mis publicaciones</button>
+              <button class="section__comunidad-container-header-button crear-publicaciones-button btn btn-primary ">Crear publicación <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-plus-lg icon-plus" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z" />
+</svg></button>
+              <button class="section__comunidad-container-header-button filtros-button btn btn-secondary ">Filtros</button>
             </div>
             
           </div>
@@ -78,13 +80,25 @@ export default {
     font-size: 1.6rem;
     padding: .4rem .8rem;
   }
-</style>
 
-<style scoped>
-@import '~/styles/login.css';
-</style>
+  .btn-outline-primary {
+      font-size: 1.6rem;
+    padding: .4rem .8rem;
+  }
 
-<route lang="yaml">
-meta:
-  layout: globals
-</route>
+  .btn-secondary {
+      font-size: 1.6rem;
+    padding: .4rem .8rem;
+  }
+
+  .crear-publicaciones-button {
+    display: flex;
+    align-items: center;
+
+  }
+
+  .icon-plus {
+    width: 20px;
+    padding-left: .5rem;
+  }
+</style>
