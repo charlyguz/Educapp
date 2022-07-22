@@ -77,3 +77,8 @@
 <style scoped>
 @import '~/styles/login.css';
 </style>
+
+<route lang="yaml">
+meta:
+  layout: globals
+</route>

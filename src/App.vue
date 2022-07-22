@@ -39,6 +39,3 @@ useHead({
   <RouterView />
 </template>
 
-<style>
-@import '~/styles/global.css';
-</style>

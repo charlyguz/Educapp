@@ -339,5 +339,5 @@
 
 <route lang="yaml">
 meta:
-  layout: landing
+  layout: globals
 </route>
