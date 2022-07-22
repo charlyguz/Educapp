@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { MockLiveSession } from '~/util/types/mocking/mock-live-session'
 import { SPANISH_MESSAGES } from '~/util/constants/time-ago'
+import { differenceInMinutes } from '~/util/date';
+
+const { minuteThreshold } = useTutorStore()
 
 const router = useRouter()
 
@@ -8,6 +11,13 @@ const props = defineProps<{
   headers: string[]
   liveSessions: MockLiveSession[]
 }>()
+
+const now = new Date()
+
+function inThreshold(date: Date) {
+  // console.log(differenceInMinutes(now, date))
+  return differenceInMinutes(date, now) < minuteThreshold
+}
 
 function formatDate(date: Date) {
   const formattedDate = useDateFormat(date, 'DD-MM-YY').value
@@ -56,6 +66,7 @@ function goMeeting(sessionId: string) {
               <button
                 type="button"
                 class="btn btn-outline-primary"
+                :disabled="!inThreshold(session.scheduledAt)"
                 @click="goMeeting(session.sessionId)"
               >
                 <span>Comenzar <i class="bi-arrow-right-short"></i></span>
