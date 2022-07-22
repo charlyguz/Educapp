@@ -1,5 +1,5 @@
 <template>
-  <navbar link1="#so" name1="Comunidad" link2="#so" name2="Agenda" link3="#so"  link4="#so" name4="Progreso" link5="#so" name5="Mis Cursos"></navbar>
+  <navbar link1="comunidad" name1="Comunidad" link2="agenda" name2="Agenda" link3="./"  link4="progreso" name4="Progreso" link5="cursos" name5="Mis Cursos"></navbar>
   <section class="section__comunidad container">
       <div class="section__comunidad-container">
           <div class="section__comunidad-container-header">
