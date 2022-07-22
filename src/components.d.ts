@@ -8,6 +8,7 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AddMentorshipModal: typeof import('./components/tutor/dashboard/AddMentorshipModal.vue')['default']
+    Chatbot: typeof import('./components/Chatbot.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     JitsiMeet: typeof import('./components/jitsi/JitsiMeet.vue')['default']

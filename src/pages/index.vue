@@ -328,6 +328,8 @@
         </div>
       </div>
     </section>
+
+    <Chatbot></Chatbot>
   </main>
 </template>
 
