@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import { MockLiveSession } from '~/util/types/mocking/mock-live-session'
+import { Query } from '~/generated/operations'
 import { SPANISH_MESSAGES } from '~/util/constants/time-ago'
-import { differenceInMinutes } from '~/util/date';
+import { differenceInMinutes } from '~/util/date'
 
 const { minuteThreshold } = useTutorStore()
 
@@ -9,7 +9,7 @@ const router = useRouter()
 
 const props = defineProps<{
   headers: string[]
-  liveSessions: MockLiveSession[]
+  liveSessions: Query['liveSessions']
 }>()
 
 const now = new Date()
@@ -47,31 +47,36 @@ function goMeeting(sessionId: string) {
             </th>
           </tr>
         </thead>
-        <tbody>
-          <tr v-for="session in props.liveSessions" :key="session.id">
-            <td>
-              <span class="btn bg-blight btn-link">{{
-                session.student.name
-              }}</span>
-            </td>
-            <td>
-              <span class="bg-blight">{{
-                formatDate(session.scheduledAt)
-              }}</span>
-            </td>
-            <td>
-              <span class="bg-blight">{{ session.sessionId }}</span>
-            </td>
-            <td class="text-center">
-              <button
-                type="button"
-                class="btn btn-outline-primary"
-                :disabled="!inThreshold(session.scheduledAt)"
-                @click="goMeeting(session.sessionId)"
-              >
-                <span>Comenzar <i class="bi-arrow-right-short"></i></span>
-              </button>
-            </td>
+        <tbody v-if="props.liveSessions">
+          <tr
+            v-for="(session, index) in props.liveSessions"
+            :key="session?.id || index"
+          >
+            <template v-if="session && session.student">
+              <td>
+                <span class="btn bg-blight btn-link">{{
+                  session.student.name
+                }}</span>
+              </td>
+              <td>
+                <span class="bg-blight">{{
+                  formatDate(new Date(session?.scheduledAt!))
+                }}</span>
+              </td>
+              <td>
+                <span class="bg-blight">{{ session.sessionId }}</span>
+              </td>
+              <td class="text-center">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  :disabled="!inThreshold(new Date(session?.scheduledAt!))"
+                  @click="goMeeting(session?.sessionId!)"
+                >
+                  <span>Comenzar <i class="bi-arrow-right-short"></i></span>
+                </button>
+              </td>
+            </template>
           </tr>
         </tbody>
       </table>

@@ -1,0 +1,11 @@
+query TutorLiveSessions {
+  liveSessions {
+    id
+    sessionId
+    scheduledAt
+    student {
+      id
+      name
+    }
+  }
+}

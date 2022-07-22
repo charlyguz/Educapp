@@ -1,10 +1,14 @@
 import { acceptHMRUpdate, defineStore } from 'pinia'
-import { MockStudent } from '~/util/types/mocking/mock-student'
-import { MockLiveSession } from '../util/types/mocking/mock-live-session'
+import { MockStudent } from '~/generated/schema'
+import { MockLiveSession } from '~/generated/schema'
 import { randomString } from '~/util/random-string'
 import { v4 as uuidv4 } from 'uuid'
+import { provideApolloClient } from '@vue/apollo-composable'
+import { defaultApolloClient } from '../modules/apollo-client'
 
-// const
+provideApolloClient(defaultApolloClient)
+
+// const 
 
 export const useTutorStore = defineStore('tutor', () => {
   /**
