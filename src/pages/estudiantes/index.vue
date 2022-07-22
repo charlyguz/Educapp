@@ -1,11 +1,19 @@
 <template>
-  <navbar link1="#so" name1="Comunidad" link2="#so" name2="Agenda" link3="#so"  link4="#so" name4="Progreso" link5="#so" name5="Mis Cursos"></navbar>
-  
+    <header class="header">
+    <h3>Bienvenido <span class="bienvenida">{{name}}</span></h3>
+    <nav class="navbar px-4">
+      <li><a href="" class="comunidad">Comunidad</a></li>
+      <li><a href="" class="agenda">Mi agenda</a> </li>
+      <li class="neon"><a href="/juegos"><img class="icon-game" src="../../assets/icons/play.png" alt=""> JUEGOS</a></li>
+      <li><a href="" class="progreso">Mi Progreso</a> </li>
+      <li><a href="" class="cursos">Mis Cursos</a> </li>
+    </nav>
+  </header>
   <div class="container-xxl flex-wrap flex-md-nowrap m-auto">
       <div class="px-4 w-100 my-4 d-flex justify-start">
     <h5>Notificaciones:</h5>
       </div>
-  <section class="progreso my-4 w-100 px-4">
+  <section class=" my-4 w-100 px-4">
     <div class="w-100 d-flex justify-content-between">
       <h5 class="mb-2">Tu progreso para cumplir tu meta</h5>
       <a class="text-dark" href="">Ver mas</a>
@@ -23,15 +31,18 @@
     </div>
     <div class="w-100">
       <div class="w-100 row">
-        <a href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
           <img class="img w-100 img-fluid" src="../../assets/imgs/biologia.jpg" alt="portada biologia">
           <h4 class="class_one h-100 py-4 border-top border-dark">Fundamentos de biologia</h4>
         </a>
-        <a href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
           <img class="img w-100 img-fluid" src="../../assets/imgs/ciencias.jpg" alt="portada ciencias naturales">
           <h4 class="class_two h-100 w-100 py-4 border-top border-dark">Ciencias Naturales</h4>
         </a>
-        <a href="" class="clases col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
+          <img class="icon-play" src="../../assets/icons/play_button.png" alt="">
           <img class="img w-100 img-fluid" src="../../assets/imgs/matematicas.jpg" alt="portada matematicas">
           <h4 class="class_three w-100 h-100 py-4 border-top border-dark">Matematicas 1</h4>
         </a>
@@ -65,7 +76,7 @@
   <chatbot></chatbot>
   </div>
   <!-- notificaciones -->
-  
+
 
 </template>
 
@@ -110,6 +121,7 @@ export default {
     text-decoration: none;
     color: rgb(0, 0, 0);
   }
+
   .header {
     width: 100%;
     height: 60px;
@@ -244,9 +256,36 @@ export default {
     width: 50px;
   }
 
+  .clase {
+    width: 300px;
+    height: 300px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    filter: brightness(0.9);
+  }
   .clases {
     font-weight: bold;
     font-size: 1.2rem;
+  }
+  .icon-play {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+    display: none;
+
+  }
+  .clase:hover .icon-play {
+    display: block;
+  }
+  .clase:hover{
+    box-shadow: 0 0 10px #000;
+    filter: brightness(1);
   }
   .clases:hover{
     box-shadow: 0 0 10px #000;
