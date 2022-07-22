@@ -17,7 +17,7 @@
 
 <script>
 export default {
-  name: "Slider",
+  name: "Navbar",
   props: {
     link1: String,
     link2: String,
@@ -36,7 +36,7 @@ export default {
 
 .header {
   height: auto;
-  background-color: #445688;
+  background-color: #d9e3ff;
   height: 70px;
 }
 
