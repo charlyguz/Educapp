@@ -109,7 +109,7 @@
         </div>
 
         <div class="section__steps-container--box-image">
-          <img src="/landing/mujerestudiando.svg" alt="" />
+          <img src="/landing/mujeresreloj.svg" alt="" />
         </div>
         <div class="section__steps-container--box-text">
           <span class="section__steps-container--box-text-number">02</span>
@@ -135,7 +135,7 @@
           </p>
         </div>
         <div class="section__steps-container--box-image">
-          <img src="/landing/mujerestudiando.svg" alt="" />
+          <img src="/landing/dudas.svg" alt="" />
         </div>
       </div>
     </section>
