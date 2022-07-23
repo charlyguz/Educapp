@@ -98,8 +98,8 @@ export default defineConfig({
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'safari-pinned-tab.svg'],
       manifest: {
-        name: 'Vitesse',
-        short_name: 'Vitesse',
+        name: 'Educapp',
+        short_name: 'Educapp',
         theme_color: '#ffffff',
         icons: [
           {
