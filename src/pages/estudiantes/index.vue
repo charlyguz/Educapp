@@ -1,21 +1,12 @@
 <template>
-    <header class="header">
-    <h3>Bienvenido <span class="bienvenida">{{name}}</span></h3>
-    <nav class="navbar px-4">
-      <li><a href="./comunidad" class="comunidad">Comunidad</a></li>
-      <li><a href="" class="agenda">Mi agenda</a> </li>
-      <li class="neon"><a href="/juegos"><img class="icon-game" src="/icons/play.png" alt=""> JUEGOS</a></li>
-      <li><a href="" class="progreso">Mi Progreso</a> </li>
-      <li><a href="" class="cursos">Mis Cursos</a> </li>
-    </nav>
-  </header>
-  <div class="container-xxl flex-wrap flex-md-nowrap m-auto">
-      <div class="px-4 w-100 my-4 d-flex justify-start">
-    <h5>Notificaciones:</h5>
+<navbar link1="/estudiantes/comunidad" name1="Comunidad" link2="/estudiantes/agenda" name2="Agenda" link3="/estudiantes"  link4="/estudiantes/progreso" name4="Progreso" link5="/estudiantes/cursos" name5="Mis Cursos"></navbar>
+  <div class="section__index-container container flex-wrap flex-md-nowrap m-auto">
+      <div class="w-100 d-flex justify-start">
+    <h5 class="global-title">Notificaciones:</h5>
       </div>
-  <section class=" my-4 w-100 px-4">
+  <section class="">
     <div class="w-100 d-flex justify-content-between">
-      <h5 class="mb-2">Tu progreso para cumplir tu meta</h5>
+      <h5 class="global-subtitle">Tu progreso para cumplir tu meta</h5>
       <a class="text-dark" href="">Ver mas</a>
     </div>
     <div class="progress progress-striped active">
@@ -24,54 +15,35 @@
       </div>
     </div>
   </section>
-  <section class="mis_cursos my-4 w-100 px-4">
+  <section class="mis_cursos w-100">
     <div class="w-100 d-flex justify-content-between">
-      <h5>Continua donde te quedaste:</h5>
+      <h5 class="global-subtitle">Continua donde te quedaste:</h5>
       <a class="text-dark" href="">Ver mas</a>
     </div>
-    <div class="w-100">
-      <div class="w-100 row">
-        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="/imgs/biologia.jpg" alt="portada biologia">
-          <h4 class="class_one h-100 py-4 border-top border-dark">Fundamentos de biologia</h4>
-        </a>
-        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="/imgs/ciencias.jpg" alt="portada ciencias naturales">
-          <h4 class="class_two h-100 w-100 py-4 border-top border-dark">Ciencias Naturales</h4>
-        </a>
-        <a href="" class="clase col text-dark container w-25 border border-dark rounded d-flex flex-column m-3">
-          <img class="icon-play" src="/icons/play_button.png" alt="">
-          <img class="img w-100 img-fluid" src="/imgs/matematicas.jpg" alt="portada matematicas">
-          <h4 class="class_three w-100 h-100 py-4 border-top border-dark">Matematicas 1</h4>
-        </a>
-      </div>
+    <div class="section__comunidad-container-grid">
+      <curso img="../../public/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="../../public/imgs/matematicas.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
+            <curso img="../../public/imgs/ciencias.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
     </div>
   </section>
 
-  <section class="todos_cursos my-4 w-100 px-4">
+  <section class="todos_cursos  w-100 ">
     <div class="w-100 d-flex justify-content-between">
-      <h4 class="text-bold">Comienza un nuevo curso: </h4>
+      <h4 class="global-subtitle">Comienza un nuevo curso: </h4>
       <a href="">Ver mas</a>
     </div>
-    <div class="w-100">
-      <div class="row">
-        <a href="" class=" clases bg-red col p-4 text-dark m-3 bg-primary-red border border-dark rounded ">Cursos de Matemáticas</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-brown border border-dark rounded ">Curso des Geografía</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-ingles border border-dark rounded ">Cursos de Ingles</a>
+      <div class="section__materia-container-grid">
+        <materia color="#8ccee6" materia="Cursos de Español"></materia>
+        <materia color="#6cb17d" materia="Cursos de Biologia"></materia>
+        <materia color="#E6958c" materia=" Cursos de Matematicas"></materia>
+        <materia color="#f79ae5" materia="Cursos de Ingles"></materia>
+        <materia color="#8ccee6" materia="Cursos de Geografía"></materia>
+        <materia color="#f9d99a" materia="Cursos de Historia"></materia>
+        <materia color="#75f9f2" materia=" Cursos de Artes"></materia>
+        <materia color="#f4bfad" materia="Cursos de Vida Saludable"></materia>
+        <materia color="#f6d1de" materia="Cursos de Computación"></materia>
       </div>
-      <div class="row">
-        <a href="" class=" clases col p-4 text-dark m-3 bg-ciencias border border-dark rounded ">Cursos de Ciencias</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-historia border border-dark rounded ">Cursos de Historia</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-lectura border border-dark rounded ">Cursos de Lectura</a>
-      </div>
-      <div class="row">
-        <a href="" class=" clases col p-4 text-dark m-3 bg-computacion border border-dark rounded ">Cursos de Computacion</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-artes border border-dark rounded ">Cursos de Artes</a>
-        <a href="" class=" clases col p-4 text-dark m-3 bg-vida border border-dark rounded ">Curso para Vida Saludable</a>
-      </div>
-    </div>
+
   </section>
   <chatbot></chatbot>
   </div>
@@ -120,6 +92,39 @@ export default {
   a {
     text-decoration: none;
     color: rgb(0, 0, 0);
+  } 
+
+  .section__index-container {
+  padding: 0 2.4rem;
+}
+
+    .global-title {
+    margin: 0;
+    font-size: 2rem;
+    padding: 2.4rem 0;
+  }
+
+  .global-subtitle {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+  }
+
+  .section__comunidad-container-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat( auto-fill, minmax(410px, 1fr));
+    grid-auto-rows: 1fr;
+    padding-bottom: 2.4rem;
+  }
+
+  .section__materia-container-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat( auto-fill, minmax(410px, 1fr));
+    grid-auto-rows: 1fr;
+    padding-bottom: 1.2rem;
+    margin-bottom: 2.4rem;
   }
 
   .header {
@@ -135,7 +140,6 @@ export default {
     font-size: 1.2rem;
     font-weight: bold;
     color: #000;
-    margin: 0 22px;
   }
   .navbar {
     display: flex;
@@ -151,27 +155,7 @@ export default {
     text-decoration: none;
     color: #000;
   }
-  .bienvenida {
-    font-weight: bold;
-    animation: colorChange 10s ease-in-out infinite;
-  }
-  @keyframes colorChange {
-    0% {
-      color: rgb(240, 12, 12);
-    }
-    25% {
-      color: rgb(255, 187, 14);
-    }
-    50% {
-      color: rgb(111, 249, 5);
-    }
-    75% {
-      color: rgb(5, 132, 236);
-    }
-    100% {
-      color: rgb(219, 25, 222);
-    }
-  }
+
   .notifications-container {
     display: flex;
     flex-direction: column;
@@ -189,21 +173,13 @@ export default {
     width: 25px;
     height: 25px;
     cursor: pointer;
-    margin-left: 10px;
-  }
-  .class_one{
-    background-color: pink;
-  }
-  .class_two{
-    background-color: rgb(45, 187, 85);
-  }
-  .class_three{
-    background-color: rgb(244, 157, 171);
   }
   .progress {
     width: 100%;
     height: 30px;
     background-color: #D9E3FF;
+    margin-bottom: 2.4rem;
+    
   }
   .progress-bar-purple {
     font-weight: bold;
@@ -247,8 +223,6 @@ export default {
     /* font-size: 1.5rem; */
     font-weight: bold;
     border: 1px black solid;
-    padding: 0.5rem;
-    padding-left: 1rem;
     border-radius: 0 1rem 1rem 0;
     cursor: pointer;
   }
@@ -409,3 +383,8 @@ export default {
 
 
 </style>
+
+<route lang="yaml">
+meta:
+  layout: globals
+</route>

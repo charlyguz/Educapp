@@ -1,5 +1,5 @@
 <template>
-  <div class="publicacion__container">
+  <div class="publicacion__container" :style="style2">
     <div class="publicacion__container-img-box" :style="style">
     </div>
     <div class="publicacion__container-footer">
@@ -20,9 +20,13 @@ export default {
     img: String,
     title: String,
     description: String,
+    color: String,
   }, computed: {
       style () {
         return 'background-image: url(' + this.img + ')';
+      },
+      style2 () {
+        return 'background-color:' + this.color; 
       }
     }
 };
@@ -30,15 +34,20 @@ export default {
 </script>
 
 <style scoped>
+  .publicacion__container-footer-title {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+
   .publicacion__container {
-    width: auto;
+    height: auto;
     background-color: rgb(188, 235, 238);
     aspect-ratio: 1/1;
     border-radius: .8rem;
   }
 
   .publicacion__container-img-box {
-    height: 80%;
+    height: 60%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
