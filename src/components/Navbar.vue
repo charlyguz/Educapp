@@ -5,7 +5,7 @@
           <li class="header__nav__ul-li"> <router-link :to="link1" class="header__nav_ul-li-a">{{name1}}</router-link></li>
           <li class="header__nav__ul-li"><router-link :to="link2" class="header__nav_ul-li-a">{{name2}}</router-link>
           </li>
-          <li class="header__nav__ul-li "><router-link :to="link3" replace class=""><img src="/imgs/logo.jpg" style="width:50px" alt=""></router-link>
+          <li class="header__nav__ul-li "><router-link :to="link3" replace class=""><img src="/imgs/logo.jpg" style="width:50px; border-radius: 100%;" alt=""></router-link>
           </li>
           <li class="header__nav__ul-li"><router-link :to="link4" class="header__nav_ul-li-a">{{name4}}</router-link>
           </li>

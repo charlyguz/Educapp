@@ -24,7 +24,7 @@
     </div>
     <div class="section__comunidad-container-grid">
       <curso img="/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
-      <router-link to="/estudiantes/regla-de-tres">
+      <router-link to="/estudiantes/cursos/regla-de-tres">
 
         <curso img="/imgs/matematicas.jpg" title="Regla de tres" description="sirve para determinar el vínculo lineal entre dos términos. Por ejemplo, si con un kilo de harina de trigo, preparo 2 tortas, con 5 kilos, cuantas tortas se harán." color="#E6958c"></curso>
       </router-link>
