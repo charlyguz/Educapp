@@ -1,4 +1,15 @@
 <template>
+    <navbar
+      link1="/profesores/comunidad"
+      name1="Comunidad"
+      link2="agenda"
+      name2="Agenda"
+      link3="./"
+      link4="/profesores/analiticas"
+      name4="Analíticas"
+      link5="/profesores"
+      name5="Mis Cursos"
+    ></navbar>
   <header class="header">
       <h4>Mis Cursos Publicos:</h4>
       <div class="search-container d-flex alig-items-center">
@@ -169,7 +180,7 @@
   </section>
   <h3 class="titulo-preguntas">Preguntas de estudiantes: </h3>
   <section class="preguntas-estudiantes">
-    <li v-for="(pregunta, index) in preguntas" class="lista-preguntas" :key="index">
+    <li v-for="(pregunta, index) in preguntas" :key="index" class="lista-preguntas">
       <h3>{{pregunta.curso}}: Clase {{pregunta.clase}}</h3>
       <h4>Estudiante: {{pregunta.nombre}}</h4>
       <p>{{pregunta.pregunta}}</p>
