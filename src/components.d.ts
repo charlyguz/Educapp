@@ -17,6 +17,7 @@ declare module '@vue/runtime-core' {
     LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
     Materia: typeof import('./components/Materia.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
+    Notification: typeof import('./components/Notification.vue')['default']
     Publicacion: typeof import('./components/Publicacion.vue')['default']
     Quiz: typeof import('./components/quiz/Quiz.vue')['default']
     README: typeof import('./components/README.md')['default']
