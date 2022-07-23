@@ -9,7 +9,7 @@
               <a href="#" class="nav-link p-0 text-muted">Inicio</a>
             </li>
             <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+              <router-link to="/tutorias" class="nav-link p-0 text-muted">Tutorias</router-link>
             </li>
             <li class="nav-item mb-2">
               <a href="#" class="nav-link p-0 text-muted">Pricing</a>
