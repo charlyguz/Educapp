@@ -17,9 +17,13 @@ Bienvenidos a educapp, en esta plataforma buscamos eliminar el rezago académico
 
 ¿cómo funciona?
 bueno, tenemos varias secciones ,pero veamos la primer vista que se nos muestra en cuanto se accede a la app.
+
+
 [![ceb6701e-4082-423d-9545-5de67efe4db3.jpg](https://i.postimg.cc/3RK4N7Kf/ceb6701e-4082-423d-9545-5de67efe4db3.jpg)](https://postimg.cc/rdPFZBR5)
 
 
 Aquí se puede encontrar información de nosotros y de la app, así como algunas opciones a explorar como el botón de donar, también podemos ver en la parte de abajo un chatbot que sirve como orientador
+
+
 [![76e31e0f-c7f8-45b0-afa9-0e34c8c0020d.jpg](https://i.postimg.cc/mrdzPJtb/76e31e0f-c7f8-45b0-afa9-0e34c8c0020d.jpg)](https://postimg.cc/CZqLtvGt)
 
