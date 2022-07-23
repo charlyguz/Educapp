@@ -1,118 +1,159 @@
 <template>
-  <footer class="bd-footer bg-light">
-    <div class="container-xxl flex-wrap flex-md-nowrap">
+
+<!-- Footer -->
+<footer class="bg-primary text-center text-white">
+  <!-- Grid container -->
+  <div class="container p-4">
+    <!-- Section: Social media -->
+    
+    <!-- Section: Social media -->
+
+    <!-- Section: Form -->
+   
+    <!-- Section: Form -->
+
+    <!-- Section: Text -->
+    <section class="mb-4">
+      <p class="footer-description">
+        Somos una organización que busca sacar el potencial en todos los niños. Impulsando sus fortalezas y mejorando sus debilidades.
+      </p>
+    </section>
+    <!-- Section: Text -->
+
+    <!-- Section: Links -->
+    <section class="">
+      <!--Grid row-->
       <div class="row">
-        <div class="col-2">
-          <h5>Sobre nosotros</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Inicio</a>
+        <!--Grid column-->
+
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">ESTUDIANTE</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">COMUNIDAD</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            <li>
+              <a href="#!" class="text-white">MI AGENDA</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            <li>
+              <a href="#!" class="text-white">MI PROGRESO</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            <li>
+              <a href="#!" class="text-white">MIS CURSOS</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
+             <li>
+              <a href="#!" class="text-white">HOME</a>
             </li>
           </ul>
         </div>
 
-        <div class="col-2">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Home</a>
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PADRE</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">MIS HIJOS</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            <li>
+              <a href="#!" class="text-white">CURSOS</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            <li>
+              <a href="#!" class="text-white">AYUDA</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            <li>
+              <a href="#!" class="text-white">PERFIL</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
+            <li>
+              <a href="#!" class="text-white">HOME</a>
             </li>
           </ul>
         </div>
+        <!--Grid column-->
 
-        <div class="col-2">
-          <h5>Section</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Home</a>
+        <!--Grid column-->
+        
+        <!--Grid column-->
+
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">TUTOR</h5>
+
+          <ul class="list-unstyled mb-0">
+            
+            <li>
+              <a href="#!" class="text-white">HORARIO</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Features</a>
+            <li>
+              <a href="#!" class="text-white">MIS ESTUDIANTES</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">Pricing</a>
+            <li>
+              <a href="#!" class="text-white">COMUNIDAD</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">FAQs</a>
+            <li>
+              <a href="#!" class="text-white">PERFIL</a>
             </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link p-0 text-muted">About</a>
+            <li>
+              <a href="#!" class="text-white">HOME</a>
             </li>
           </ul>
         </div>
+        <!--Grid column-->
 
-        <div class="col-4 offset-1">
-          <form>
-            <h5>Suscríbete para recibir más información</h5>
-            <p>Para estar al tanto de nuevo contenido</p>
-            <div class="d-flex w-100 gap-2">
-              <label for="newsletter1" class="visually-hidden"
-                >Tu dirección de correo</label
-              >
-              <div class="fx-relay-email-input-wrapper">
-                <input
-                  id="newsletter1"
-                  type="text"
-                  class="form-control"
-                  placeholder="Tu dirección de correo"
-                  style="padding-right: 42px"
-                />
-              </div>
-              <button class="btn btn-primary" type="button">Suscribirme</button>
-            </div>
-          </form>
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+          <h5 class="text-uppercase">PROFESORES</h5>
+
+          <ul class="list-unstyled mb-0">
+            <li>
+              <a href="#!" class="text-white">COMUNIDAD</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">MIS CURSOS</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">MIS GRUPOS</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">PERFIL</a>
+            </li>
+            <li>
+              <a href="#!" class="text-white">HOME</a>
+            </li>
+          </ul>
         </div>
+        <!--Grid column-->
       </div>
+      <!--Grid row-->
+    </section>
+    <!-- Section: Links -->
+  </div>
+  <!-- Grid container -->
 
-      <div class="d-flex justify-content-between py-4 my-4 border-top">
-        <p>© 2022 Educapp Inc. Todos los derechos reservados.</p>
-        <ul class="list-unstyled d-flex">
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <i class="bi-twitter"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <i class="bi-instagram"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <i class="bi-facebook"></i>
-            </a>
-          </li>
-          <li class="ms-3">
-            <a class="link-dark" href="#">
-              <i class="bi-youtube"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </footer>
+  <!-- Copyright -->
+  <div class="text-center p-3 div-app" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright:
+    <a class="text-white" href="https://mdbootstrap.com/">Educaap</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<!-- Footer -->
 </template>
+
+<style scoped>
+  .footer-description {
+    font-size: 1.6rem;
+  }
+
+  .div-app {
+    font-size: 1.6rem;
+  }
+
+  h5 {
+    font-size: 1.6rem;
+  }
+
+  .list-unstyled li {
+    font-size: 1.2rem;
+  }
+</style>
