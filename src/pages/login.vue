@@ -33,19 +33,19 @@
               <div class="btn-group btn-group-lg mb-3" role="group" aria-label="Basic outlined example">
                 
 
-                <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-  <input id="btnradio1" type="radio" class="btn-check" name="btnradio" autocomplete="off" checked>
-  <label class="btn btn-outline-primary" for="btnradio1">Maestro</label>
+                <div class="btn-group"   role="group" aria-label="Basic radio toggle button group">
+                  <input  id="btnradio1" type="radio" class="btn-check" name="btnradio" autocomplete="off" checked>
+                  <label class="btn btn-outline-primary" for="btnradio1">Maestro</label>
 
-  <input id="btnradio2" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio2">Tutor</label>
+                  <input  id="btnradio2" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio2">Tutor</label>
 
-  <input id="btnradio3" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio3">Padre</label>
+                  <input  id="btnradio3" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio3">Padre</label>
 
-  <input id="btnradio4" type="radio" class="btn-check" name="btnradio" autocomplete="off">
-  <label class="btn btn-outline-primary" for="btnradio4">Alumno</label>
-</div>
+                  <input id="btnradio4" type="radio" class="btn-check" name="btnradio" autocomplete="off">
+                  <label class="btn btn-outline-primary" for="btnradio4">Alumno</label>
+                </div>
               </div>
 
               <form action="">
@@ -63,7 +63,7 @@
 
 
             <div class="d-grid gap-2 mt-auto">
-              <button class="btn btn-primary" type="button">Ingresar</button>
+              <button class="btn btn-primary" type="button" @click="llamar">Ingresar</button>
             </div>
            
           </div>
@@ -73,6 +73,31 @@
 
 
 </template>
+
+<script>
+export default {
+  methods: {
+    llamar() {
+      if (document.getElementById("btnradio1").checked == true) {
+        window.location.href = './profesores';
+      }
+
+      else if (document.getElementById("btnradio2").checked == true) {
+        window.location.href = './tutorias';
+      }
+
+      else if (document.getElementById("btnradio3").checked == true) {
+        window.location.href = './padre';
+      }
+
+      else  {
+        window.location.href = './estudiantes';
+      }
+    }
+  }
+}
+</script>
+
 
 <style scoped>
 @import '~/styles/login.css';
