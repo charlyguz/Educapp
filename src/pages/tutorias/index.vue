@@ -1,8 +1,13 @@
 <script setup lang="ts">
+import { provideApolloClient } from '@vue/apollo-composable'
+import { defaultApolloClient } from '~/modules/apollo-client'
+
 import {
   MockLiveSession,
   useTutorLiveSessionsQuery,
 } from '~/generated/operations'
+
+// provideApolloClient(defaultApolloClient)
 
 const { loading, onResult } = useTutorLiveSessionsQuery()
 const tutorStore = useTutorStore()
