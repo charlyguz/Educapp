@@ -17,7 +17,9 @@ export const useTutorStore = defineStore('tutor', () => {
   const liveSessions = ref<MockLiveSession[]>([])
 
   const students = computed(() =>
-    liveSessions.value.map((liveSession) => liveSession.student!)
+    Array.from(
+      new Set(liveSessions.value.map((liveSession) => liveSession.student!))
+    )
   )
 
   const sessionIdPrefix = 'educapp-tutoria-'
