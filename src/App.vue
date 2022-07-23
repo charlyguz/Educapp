@@ -4,9 +4,7 @@
 // they will be rendered correctly in the html results with vite-ssg
 useHead({
   title: 'Educapp',
-  meta: [
-    { name: 'description', content: 'Aprende jugando' },
-  ],
+  meta: [{ name: 'description', content: 'Aprende jugando' }],
   link: [
     {
       rel: 'icon',
@@ -27,6 +25,9 @@ useHead({
         'sha384-ODmDIVzN+pFdexxHEHFBQH3/9/vQ9uori45z4JjnFsRydbmQbmL5t1tQ0culUzyK',
       crossorigin: 'anonymous',
     },
+    // {
+    //   src: 'https://canvasjs.com/assets/script/canvasjs.min.js',
+    // },
   ],
 })
 </script>
@@ -34,4 +35,3 @@ useHead({
 <template>
   <RouterView />
 </template>
-

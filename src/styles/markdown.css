@@ -9,7 +9,7 @@
   width: 100%;
 }
 
-html:not(.dark) .prose {
+/* html:not(.dark) .prose {
   --prism-foreground: #393a34;
   --prism-background: #fbfbfb;
   --prism-comment: #a0ada0;
@@ -55,4 +55,4 @@ html.dark .prose {
   --prism-line-number-gutter: #eeeeee;
   --prism-line-highlight-background: #444444;
   --prism-selection-background: #444444;
-}
+} */

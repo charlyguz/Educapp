@@ -10,9 +10,9 @@ body,
   scroll-behavior: smooth;
 }
 
-html.dark {
+/* html.dark {
   background: #121212;
-}
+} */
 
 #nprogress {
   pointer-events: none;

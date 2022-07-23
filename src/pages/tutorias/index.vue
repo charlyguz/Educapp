@@ -1,13 +1,8 @@
 <script setup lang="ts">
-import { provideApolloClient } from '@vue/apollo-composable'
-import { defaultApolloClient } from '~/modules/apollo-client'
-
 import {
   MockLiveSession,
   useTutorLiveSessionsQuery,
 } from '~/generated/operations'
-
-// provideApolloClient(defaultApolloClient)
 
 const { loading, onResult } = useTutorLiveSessionsQuery()
 const tutorStore = useTutorStore()
@@ -31,6 +26,17 @@ const schedule = (value: { date: Date; studentId: string }) => {
 </script>
 
 <template>
+  <navbar
+    link1="/estudiantes/comunidad"
+    name1="Comunidad"
+    link2="agenda"
+    name2="Agenda"
+    link3="./"
+    link4="/tutorias"
+    name4="Tutorías"
+    link5="cursos"
+    name5="Mis Cursos"
+  ></navbar>
   <!-- Modal -->
   <div
     id="addMentorship"
