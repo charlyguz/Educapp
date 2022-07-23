@@ -522,6 +522,7 @@ export default {
 </style>
 
 <route lang="yaml">
+
 meta:
   layout: globals
 </route>
