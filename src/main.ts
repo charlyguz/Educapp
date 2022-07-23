@@ -8,12 +8,15 @@ import customRoutes from '~/routes'
 // Bootstrap styles
 import 'bootstrap/dist/css/bootstrap.min.css'
 import 'bootstrap-icons/font/bootstrap-icons.css'
+import { provideApolloClient } from '@vue/apollo-composable'
+import { defaultApolloClient } from './modules/apollo-client'
 // Bootstrap js files
 // import '@popperjs/core'
 // import 'bootstrap'
 
 // Import custom styles
 // import './styles/main.css'
+provideApolloClient(defaultApolloClient)
 
 const routes = setupLayouts(generatedRoutes.concat(customRoutes))
 
