@@ -7,7 +7,7 @@ function toogleQuiz() {
 <template>
   <div class="container-xxl flex-wrap flex-md-nowrap">
     <div class="row">
-      <!-- <div class="col">Column</div> -->
+      
       <div class="col">
         <iframe
           width="auto"

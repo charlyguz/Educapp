@@ -12,8 +12,8 @@
     <div>
       {{msg}}
     </div>
-    
-                  <button class="section__comunidad-container-header-button mis-publicaciones-button btn btn-primary ">Unirse</button>
+    <router-link to="/tutorias/educapp-tutoria-cJ2xGTF3"><button class="section__comunidad-container-header-button mis-publicaciones-button btn btn-primary ">Unirse</button></router-link>
+                  <!-- <button class="section__comunidad-container-header-button mis-publicaciones-button btn btn-primary ">Unirse</button> -->
   </div>
 </div>
    
