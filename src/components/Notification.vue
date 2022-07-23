@@ -3,7 +3,7 @@
 
   <div class="toast" role="alert" aria-live="assertive" aria-atomic="true">
   <div class="toast-header" style="background-color: #d9e3ff">
-    <img src="../../public/imgs/logo.jpg" style="width: 18px" class="rounded me-2" alt="...">
+    <img src="/imgs/logo.jpg" style="width: 18px" class="rounded me-2" alt="...">
     <strong class="me-auto title-toast">{{title}}</strong>
     <small class="time-change">{{time}}</small>
     <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close" @click="close"></button>
