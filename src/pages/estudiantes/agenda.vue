@@ -1,14 +1,5 @@
 <template>
-  <header class="header">
-    <h3>Bienvenido <span class="bienvenida">{{name}}</span></h3>
-    <nav class="navbar px-4">
-      <li><a href="./comunidad" class="comunidad">Comunidad</a></li>
-      <li><a href="" class="agenda">Mi agenda</a> </li>
-      <li class="neon"><a href="/juegos"><img class="icon-game" src="/icons/play.png" alt=""> JUEGOS</a></li>
-      <li><a href="" class="progreso">Mi Progreso</a> </li>
-      <li><a href="" class="cursos">Mis Cursos</a> </li>
-    </nav>
-  </header>
+  <navbar link1="comunidad" name1="Comunidad" link2="agenda" name2="Agenda" link3="./"  link4="progreso" name4="Progreso" link5="cursos" name5="Mis Cursos"></navbar>
 </template>
 
 <script>
@@ -20,3 +11,8 @@ export default {
 <style>
 
 </style>
+
+<route lang="yaml">
+meta:
+  layout: globals
+</route>

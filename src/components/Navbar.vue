@@ -2,14 +2,14 @@
   <header class="header">
       <nav class="header__nav container">
         <ul class="header__nav__ul">
-          <li class="header__nav__ul-li"><a :href="link1" class="header__nav_ul-li-a">{{name1}}</a> </li>
-          <li class="header__nav__ul-li"><a :href="link2" class="header__nav_ul-li-a">{{name2}}</a>
+          <li class="header__nav__ul-li"> <router-link :to="link1" class="header__nav_ul-li-a">{{name1}}</router-link></li>
+          <li class="header__nav__ul-li"><router-link :to="link2" class="header__nav_ul-li-a">{{name2}}</router-link>
           </li>
-          <li class="header__nav__ul-li header__nav-logo "><a :href="link3" class="header__nav_ul-li-a">Logo</a>
+          <li class="header__nav__ul-li header__nav-logo "><router-link :to="link3" replace class="header__nav_ul-li-a">Logo</router-link>
           </li>
-          <li class="header__nav__ul-li"><a :href="link4" class="header__nav_ul-li-a">{{name4}}</a>
+          <li class="header__nav__ul-li"><router-link :to="link4" class="header__nav_ul-li-a">{{name4}}</router-link>
           </li>
-          <li class="header__nav__ul-li"><a :href="link5" class="header__nav_ul-li-a">{{name5}}</a> </li>
+          <li class="header__nav__ul-li"><router-link :to="link5" class="header__nav_ul-li-a">{{name5}}</router-link> </li>
         </ul>
       </nav>
     </header>
