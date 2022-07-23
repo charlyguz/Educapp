@@ -18,11 +18,11 @@
             <p class="global-subtitle">Continua con el curso</p>
 
           <div class="section__comunidad-container-grid">
-            <curso img="../../public/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
-            <curso img="../../public/imgs/matematicas.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
-            <curso img="../../public/imgs/ciencias.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
+            <curso img="/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="/imgs/matematicas.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
+            <curso img="/imgs/ciencias.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
             
-            <curso img="../../public/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
 
             
             
@@ -31,11 +31,11 @@
         <p class="global-subtitle">Cursos recomendados</p>
 
           <div class="section__comunidad-container-grid">
-            <curso img="../../public/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
-            <curso img="../../public/imgs/matematicas.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
-            <curso img="../../public/imgs/ciencias.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
+            <curso img="/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="/imgs/matematicas.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
+            <curso img="/imgs/ciencias.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
             
-            <curso img="../../public/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="/imgs/biologia.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
 
             
             
@@ -46,10 +46,10 @@
            <div class="section__comunidad-container-grid">
 
             
-            <curso img="../../public/imgs/biologia.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más." color="#E6958c"></curso>
-            <curso img="../../public/imgs/matematicas.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
-            <curso img="../../public/imgs/ciencias.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
-            <curso img="../../public/imgs/biologia.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
+            <curso img="/imgs/biologia.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más." color="#E6958c"></curso>
+            <curso img="/imgs/matematicas.jpg" title="Partes de un cuento" description="Los cuentos entretienen, aportan valores y ayudan al desarrollo de las emociones" color="#8ccee6"></curso>
+            <curso img="/imgs/ciencias.jpg" title="Fundamentos de biología" description="Describir la organización de los seres vivos en general y del ser humano" color="#6cb17d"></curso>
+            <curso img="/imgs/biologia.jpg" title="Ángulos" description="la parte del plano determinada por dos semirrectas. Veras esto y mucho más.." color="#E6958c"></curso>
           </div>
       </div>
   </section>

@@ -19,18 +19,18 @@
           <p class="section__comunidad-container-header-description">Comparte tus proyectos con el de otros. Para recibir recomendaciones de tus compañeros. También tú puedes ver lo de los demas y obtener inspiración para tu siguiente obra.</p>
 
           <div class="section__comunidad-container-grid">
-            <publicacion img="../../public/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
-            <publicacion img="../../public/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
-            <publicacion img="../../public/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
-            <publicacion img="../../public/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
-            <publicacion img="../../public/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
-            <publicacion img="../../public/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
-            <publicacion img="../../public/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
-            <publicacion img="../../public/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
-            <publicacion img="../../public/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
-            <publicacion img="../../public/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
-            <publicacion img="../../public/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
-            <publicacion img="../../public/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
+            <publicacion img="/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
+            <publicacion img="/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
+            <publicacion img="/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
+            <publicacion img="/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
+            <publicacion img="/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
+            <publicacion img="/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
+            <publicacion img="/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
+            <publicacion img="/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
+            <publicacion img="/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
+            <publicacion img="/69052.webp" title="La noche estrellada" description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."></publicacion>
+            <publicacion img="/imgs/guernica.jpg" title="Guernica, de Pablo Picasso" description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."></publicacion>
+            <publicacion img="/imgs/ultimacena.jpg" title="La última cena, de Leonardo Da Vinci" description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."></publicacion>
             
             
           </div>
