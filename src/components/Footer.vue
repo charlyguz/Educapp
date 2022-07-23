@@ -31,19 +31,19 @@
 
           <ul class="list-unstyled mb-0">
             <li>
-              <a href="#!" class="text-white">COMUNIDAD</a>
+              <router-link to="/estudiantes/comunidad" class="text-white">COMUNIDAD</router-link>
             </li>
-            <li class="nav-item mb-2">
-              <router-link to="/tutorias" class="nav-link p-0 text-muted">Tutorias</router-link>
-            </li>
-            <li>
-              <a href="#!" class="text-white">MI PROGRESO</a>
+            <li class="">
+              <router-link to="/estudiantes/tutorias" class="text-white">TUTORIAS</router-link>
             </li>
             <li>
-              <a href="#!" class="text-white">MIS CURSOS</a>
+              <router-link to="/estudiantes/progreso" class="text-white">MI PROGRESO</router-link>
+            </li>
+            <li>
+              <router-link to="/estudiantes/cursos" class="text-white">MIS CURSOS</router-link>
             </li>
              <li>
-              <a href="#!" class="text-white">HOME</a>
+              <router-link to="/estudiantes/" class="text-white">HOME</router-link>
             </li>
           </ul>
         </div>
