@@ -33,8 +33,8 @@
             <li>
               <a href="#!" class="text-white">COMUNIDAD</a>
             </li>
-            <li>
-              <a href="#!" class="text-white">MI AGENDA</a>
+            <li class="nav-item mb-2">
+              <router-link to="/tutorias" class="nav-link p-0 text-muted">Tutorias</router-link>
             </li>
             <li>
               <a href="#!" class="text-white">MI PROGRESO</a>
