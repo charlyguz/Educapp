@@ -13,6 +13,7 @@ declare module '@vue/runtime-core' {
     Curso: typeof import('./components/Curso.vue')['default']
     ExampleClass: typeof import('./components/classes/ExampleClass.vue')['default']
     Curso: typeof import('./components/Curso.vue')['default']
+    ExampleClass: typeof import('./components/classes/ExampleClass.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
     JitsiMeet: typeof import('./components/jitsi/JitsiMeet.vue')['default']
     LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
