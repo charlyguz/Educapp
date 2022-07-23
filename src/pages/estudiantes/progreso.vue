@@ -16,7 +16,7 @@
             <div class="perfil-container">
               <img class="perfil-image" src="/public/imgs/astronauta.jpg" alt=""> 
               <p class="perfil-Nombre">Juan</p>
-              <P class="perfil-rol">Viajero</P>
+              <p class="perfil-rol">Viajero</p>
               <p class="perfil-experiencia">1700 xp</p>
               <p class="perfil-experiencia">20 días seguidos aprendiendo <span>2X</span></p>
             </div>
