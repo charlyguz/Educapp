@@ -8,8 +8,8 @@
         <input id="search" type="text" placeholder="Buscar...">
       </div>
       <div class="crear-container d-flex alig-items-center">
-        <p @click="crearNuevaClase">Crear Nuevo</p>
-        <p>+</p>
+        <p @click="crearNuevaClase" class="btn btn-primary">Crear Nuevo +</p>
+
       </div>
       <div class="filtros-container d-flex alig-items-center">
         <p>Filtros</p>
@@ -47,8 +47,7 @@
         <input id="search" type="text" placeholder="Buscar...">
       </div>
       <div class="crear-container d-flex alig-items-center">
-        <p @click="crearNuevaClase">Crear Nuevo</p>
-        <p>+</p>
+        <p @click="crearNuevaClase" class="btn btn-primary">Crear Nuevo +</p>
       </div>
       <div class="filtros-container d-flex alig-items-center">
         <p>Filtros</p>
@@ -168,7 +167,7 @@
     </div>
   </section>
   <h3 class="titulo-preguntas">Preguntas de estudiantes: </h3>
-  <section class="preguntas-estudiantes">
+  <section class="preguntas-estudiantes container">
     <li v-for="(pregunta, index) in preguntas" class="lista-preguntas" :key="index">
       <h3>{{pregunta.curso}}: Clase {{pregunta.clase}}</h3>
       <h4>Estudiante: {{pregunta.nombre}}</h4>
@@ -284,7 +283,7 @@ export default {
     margin: 4rem 2rem;
   }
   .retirar-pago-container {
-    width: 300px;
+    width: 550px;
     height: 100px;
     display: flex;
     align-items: center;
@@ -292,10 +291,12 @@ export default {
 
   }
 .btn-4 {
-  background-color: #4dccc6;
-background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
+  width: 200px;
+  height: 40px;
+  background-color: #6a90c6;
+  background-image: linear-gradient(315deg, #0d6efd 0%, #96b4e4 74%);
   line-height: 42px;
-  padding: 1rem;
+  /* padding: 1rem; */
   border: none;
   font-size: 1.2rem;
   color: rgb(0, 0, 0);
@@ -303,9 +304,9 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   border-radius: 10px;
 }
 .btn-4:hover{
-  background-color: #89d8d3;
-  background-image: linear-gradient(315deg, #89d8d3 0%, #03c8a8 74%);
-  color: rgb(255, 255, 255);
+  background-color: #6a90c6;
+  background-image: linear-gradient(315deg, #96b4e4 0%, #0d6efd74 74%);
+  color: #fff;
 }
 .btn-4 span {
   position: relative;
@@ -380,7 +381,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
     margin-bottom: 4rem;
   }
   .lista-preguntas {
-    width: 230px;
+    width: 330px;
     height: auto;
     background-color: lightgray;
     margin: 10px;
@@ -390,6 +391,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   .grupos-publicos {
     box-sizing: border-box;
     width: 98%;
+    /* height: 600px; */
   }
   .star {
     font-size: 2.2rem;
@@ -406,7 +408,7 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   }
   .clase {
     width: 300px;
-    height: 300px;
+    height: 400px;
     font-weight: bold;
     font-size: 1.2rem;
     display: flex;
@@ -473,10 +475,17 @@ background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
   align-items: center;
   justify-content: center;
   font-size: 1.2rem;
-  background: rgb(43, 136, 198);
+  /* background: #0d6efd; */
   margin: 0;
   padding: 0;
   cursor: pointer;
+}
+.crear-container p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 0.7rem;
+  margin-top: 0.8rem;
 }
 .crear-container :nth-child(1) {
   font-weight: bold;

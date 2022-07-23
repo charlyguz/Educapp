@@ -1,6 +1,6 @@
 <template>
     <header class="header">
-    <h3>Bienvenido <span class="bienvenida">{{name}}</span></h3>
+    <h3><img :src="nivelBadge(nivel).img" :alt="alt" style="width: 30px"> Bienvenido <span class="bienvenida">{{nivelBadge(nivel).nombreNivel}}</span></h3>
     <nav class="navbar px-4">
       <li><a href="./comunidad" class="comunidad">Comunidad</a></li>
       <li><a href="" class="agenda">Mi agenda</a> </li>
@@ -19,8 +19,8 @@
       <a class="text-dark" href="">Ver mas</a>
     </div>
     <div class="progress progress-striped active">
-      <div class="progress-bar progress-bar-purple" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
-          NIVEL: 20<img class="logo-progress" src="/icons/cohete.png" alt="">
+      <div class="progress-bar progress-bar-purple" role="progressbar" :aria-valuenow="nivel" aria-valuemin="0" aria-valuemax="100" :style="getWidth(nivel)">
+          NIVEL: {{nivel}}<img id="tunnel" class="logo-progress" src="/icons/cohete.png" alt="" :style="getPosition(nivel)">
       </div>
     </div>
   </section>
@@ -81,12 +81,93 @@
 </template>
 
 <script>
+
 export default {
   data() {
     return {
-      name: 'Erick',
+      nivel: "60",
       notification: false,
+      imagen: "",
+      alt: "no se mira",
       notifications: [],
+      progreso: {width: this.nivel},
+      niveles: [
+        {
+          nivel: 10,
+          nombre: 'Novato',
+          img: 'src/assets/badgs/nivel10.png'
+        },
+        {
+          nivel: 20,
+          nombre: 'Sargento',
+          img: 'src/assets/badgs/nivel20.png'
+        },
+        {
+          nivel: 30,
+          nombre: 'Comandante',
+          img: 'src/assets/badgs/nivel30.png'
+        },
+        {
+          nivel: 40,
+          nombre: 'General',
+          img: 'src/assets/badgs/nivel40.png'
+        },
+        {
+          nivel: 50,
+          nombre: 'Soldado Estelar',
+          img: 'src/assets/badgs/nive50.png'
+        },
+        {
+          nivel: 60,
+          nombre: 'Super Robot ',
+          img: 'src/assets/badgs/nivel60.png'
+        },
+        {
+          nivel: 70,
+          nombre: 'Nivel 70',
+          img: ''
+        },
+        {
+          nivel: 80,
+          nombre: 'Nivel 80',
+          img: ''
+        },
+        {
+          nivel: 90,
+          nombre: 'Nivel 90',
+          img: ''
+        },
+        {
+          nivel: 100,
+          nombre: 'Nivel 100',
+          img: ''
+        },
+        {
+          nivel: 110,
+          nombre: 'Nivel 110',
+          img: ''
+        },
+        {
+          nivel: 120,
+          nombre: 'Nivel 120',
+          img: ''
+        },
+        {
+          nivel: 130,
+          nombre: 'Nivel 130',
+          img: ''
+        },
+        {
+          nivel: 140,
+          nombre: 'Nivel 140',
+          img: ''
+        },
+        {
+          nivel: 150,
+          nombre: 'Nivel 150',
+          img: ''
+        },
+      ]
     }
   },
   // poner texto si no hay notificaiones
@@ -102,10 +183,30 @@ export default {
   methods: {
     toggleNotification() {
       this.notification = !this.notification
-      // girar la imagen
       let img = document.querySelector('.icon-notifications img')
       img.classList.toggle('rotate')
-    }
+    },
+    nivelBadge(nivel) {
+      let nivelExaacto = nivel.slice(0, -1) * 10
+      let img = this.niveles.find(nivel => nivel.nivel === nivelExaacto).img
+      let nombreNivel = this.niveles.find(nivel => nivel.nivel === nivelExaacto).nombre
+      console.log(this.progreso)
+      return {
+        img,
+        nombreNivel
+      }
+    },
+    getWidth(nivel) {
+      let progreso = {width: nivel+"%"}
+      // console.log(progreso)
+      return progreso
+    },
+
+    getPosition(nivel) {
+      let position = {left: nivel+"%"}
+
+      return position
+    },
   },
 }
 </script>
@@ -218,9 +319,10 @@ export default {
 }
   .logo-progress {
     position: absolute;
-    left:20%;
     width: 40px;
     height: 40px;
+
+
   }
   .img{
     width: 100%;
