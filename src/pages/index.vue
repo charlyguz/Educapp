@@ -6,7 +6,8 @@
           <li class="header__nav__ul-li"><a href="#ofrecemos" class="header__nav_ul-li-a">¿Qué ofrecemos?</a> </li>
           <li class="header__nav__ul-li"><a href="#acercade" class="header__nav_ul-li-a">¿Quiénes somos?</a> </li>
           <li class="header__nav__ul-li"><a href="#funciona" class="header__nav_ul-li-a">¿Cómo funciona?</a> </li>
-          <li class="header__nav__ul-li header__nav-logo "><a href="#" class="header__nav_ul-li-a">Logo</a> </li>
+          <li class="header__nav__ul-li "><router-link to="/" replace class=""><img src="/imgs/logo.jpg" style="width:50px" alt=""></router-link>
+          </li>
           <li class="header__nav__ul-li"><a href="#donaciones" class="header__nav_ul-li-a">Donaciones</a> </li>
           <li class="header__nav__ul-li"><a href="./login" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
           <li class="header__nav__ul-li-2"><a href="./register" class="primary-button mr-18 ">¡Empieza hoy!</a></li>
@@ -24,7 +25,7 @@
             Somos una organización que busca sacar el potencial en todos los
             niños. Impulsando sus fortalezas y mejorando sus debilidades.
           </p>
-          <a href="/landing/register.html" class="primary-button mr-18"
+          <a href="./register" class="primary-button mr-18"
             >¡Empieza hoy!</a
           >
           <a href="#acercade" class="secundary-button">Más de nosotros</a>
@@ -217,7 +218,7 @@
             <p class="section__ofrecemos-grid-box-description mb-32">
               ¿Listo para ser tu mejor versión?
             </p>
-            <a href="/landing/register.html" class="primary-button mt-16"
+            <a href="./register" class="primary-button mt-16"
               >¡Empieza hoy!</a
             >
           </div>
