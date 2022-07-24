@@ -80,3 +80,7 @@ const schedule = (value: { date: Date; studentId: string }) => {
 meta:
   layout: home
 </route>
+
+<style>
+  
+</style>

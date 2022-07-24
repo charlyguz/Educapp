@@ -98,6 +98,7 @@ export default {
 }
 </script>
 
+
 <style scoped>
 @import '~/styles/login.css';
 </style>
