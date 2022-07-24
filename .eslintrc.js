@@ -19,7 +19,7 @@ module.exports = {
     'src/generated/*',
     './dist/*',
     './.eslintrc-auto-import.json',
-    './graphql.schema.json'
+    './graphql.schema.json',
   ],
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {

@@ -3,14 +3,29 @@
     <header class="header">
       <nav class="header__nav container">
         <ul class="header__nav__ul">
-          <li class="header__nav__ul-li"><a href="#ofrecemos" class="header__nav_ul-li-a">¿Qué ofrecemos?</a> </li>
-          <li class="header__nav__ul-li"><a href="#acercade" class="header__nav_ul-li-a">¿Quiénes somos?</a> </li>
-          <li class="header__nav__ul-li"><a href="#funciona" class="header__nav_ul-li-a">¿Cómo funciona?</a> </li>
-          <li class="header__nav__ul-li "><router-link to="/" replace class=""><img src="/imgs/logo.jpg" style="width:50px" alt=""></router-link>
+          <li class="header__nav__ul-li">
+            <a href="#ofrecemos" class="header__nav_ul-li-a">¿Qué ofrecemos?</a>
           </li>
-          <li class="header__nav__ul-li"><a href="#donaciones" class="header__nav_ul-li-a">Donaciones</a> </li>
-          <li class="header__nav__ul-li"><a href="./login" class="header__nav_ul-li-a">Inicia Sesión</a> </li>
-          <li class="header__nav__ul-li-2"><a href="./register" class="primary-button mr-18 ">¡Empieza hoy!</a></li>
+          <li class="header__nav__ul-li">
+            <a href="#acercade" class="header__nav_ul-li-a">¿Quiénes somos?</a>
+          </li>
+          <li class="header__nav__ul-li">
+            <a href="#funciona" class="header__nav_ul-li-a">¿Cómo funciona?</a>
+          </li>
+          <li class="header__nav__ul-li">
+            <router-link to="/" replace class=""
+              ><img src="/imgs/logo.jpg" style="width: 50px" alt=""
+            /></router-link>
+          </li>
+          <li class="header__nav__ul-li">
+            <a href="#donaciones" class="header__nav_ul-li-a">Donaciones</a>
+          </li>
+          <li class="header__nav__ul-li">
+            <a href="./login" class="header__nav_ul-li-a">Inicia Sesión</a>
+          </li>
+          <li class="header__nav__ul-li-2">
+            <a href="./register" class="primary-button mr-18">¡Empieza hoy!</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -25,9 +40,7 @@
             Somos una organización que busca sacar el potencial en todos los
             niños. Impulsando sus fortalezas y mejorando sus debilidades.
           </p>
-          <a href="./register" class="primary-button mr-18"
-            >¡Empieza hoy!</a
-          >
+          <a href="./register" class="primary-button mr-18">¡Empieza hoy!</a>
           <a href="#acercade" class="secundary-button">Más de nosotros</a>
         </div>
 
@@ -218,9 +231,7 @@
             <p class="section__ofrecemos-grid-box-description mb-32">
               ¿Listo para ser tu mejor versión?
             </p>
-            <a href="./register" class="primary-button mt-16"
-              >¡Empieza hoy!</a
-            >
+            <a href="./register" class="primary-button mt-16">¡Empieza hoy!</a>
           </div>
         </div>
       </div>
@@ -243,76 +254,208 @@
               poder encaminar a lo que ellos realmente quieren ser.
             </p>
 
-
-              <a
+            <a
               href="#"
               class="secundary-button section__ofrecemos-grid-box-button"
-               data-bs-toggle="modal" data-bs-target="#exampleModal"
-              >¡Dona ahora!</a>
+              data-bs-toggle="modal"
+              data-bs-target="#exampleModal"
+              >¡Dona ahora!</a
+            >
 
-              <!-- Modal -->
-              <div id="exampleModal" class="modal fade" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h2 id="exampleModalLabel" class="modal-title">Dona para poder seguir enseñando</h2>
-                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            <!-- Modal -->
+            <div
+              id="exampleModal"
+              class="modal fade"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h2 id="exampleModalLabel" class="modal-title">
+                      Dona para poder seguir enseñando
+                    </h2>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="modal-body-left">
+                      <h3 class="modal-body-left-title">¿Por qué donar?</h3>
+
+                      <p class="modal-body-left-description">
+                        Esta plataforma es totalmente gratuita, por ello las
+                        donaciones son para fundamental para mantener la
+                        aplicación en funcionando.
+                      </p>
+                      <br />
+                      <p class="modal-body-left-description">
+                        Esto con la intención de poder seguir llegando a jovenes
+                        y sacar su potencial. Esto siendo fundamental en edades
+                        tempranas para poder encaminar a lo que ellos realmente
+                        quieren ser.
+                      </p>
                     </div>
-                    <div class="modal-body">
-                      <div class="modal-body-left">
-                        <h3 class="modal-body-left-title">¿Por qué donar?</h3>
+                    <div class="modal-body-right">
+                      <div class="model-body-right-box">
+                        <div>
+                          <p class="modal-body-right-title">
+                            Frecuencia de la donación
+                          </p>
+                          <div
+                            class="btn-group modal-body-right-div"
+                            role="group"
+                            aria-label="Basic radio toggle button group"
+                          >
+                            <input
+                              id="btnradio1"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              autocomplete="off"
+                              checked
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio1"
+                              >Única vez</label
+                            >
 
-                        <p class="modal-body-left-description">Esta plataforma es totalmente gratuita, por ello las donaciones son para fundamental para mantener la aplicación en funcionando.
-</p><br>
-                      <p class="modal-body-left-description">Esto con la intención de poder seguir llegando a jovenes y sacar su potencial. Esto siendo fundamental en edades tempranas para poder encaminar a lo que ellos realmente quieren ser.</p>
-
-
-                      </div>
-                      <div class="modal-body-right">
-                        <div class="model-body-right-box">
-                          <div><p class="modal-body-right-title">Frecuencia de la donación</p>
-                          <div class="btn-group modal-body-right-div" role="group" aria-label="Basic radio toggle button group">
-                            <input id="btnradio1" type="radio" class="btn-check  " name="btnradio" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="btnradio1">Única vez</label>
-
-                            <input id="btnradio2" type="radio" class="btn-check " name="btnradio" autocomplete="off">
-                            <label class="btn btn-outline-primary " for="btnradio2">Mensualmente</label>
+                            <input
+                              id="btnradio2"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio2"
+                              >Mensualmente</label
+                            >
                           </div>
 
-                          <p p class="modal-body-right-title ">Cantidad de la donación</p>
-                          <div class="btn-group modal-body-right-div"  role="group" aria-label="Basic radio toggle button group">
-                            <input id="btnradio3" type="radio" class="btn-check" name="btnradio2" autocomplete="off" checked>
-                            <label class="btn btn-outline-primary" for="btnradio3">$10</label>
+                          <p p class="modal-body-right-title">
+                            Cantidad de la donación
+                          </p>
+                          <div
+                            class="btn-group modal-body-right-div"
+                            role="group"
+                            aria-label="Basic radio toggle button group"
+                          >
+                            <input
+                              id="btnradio3"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio2"
+                              autocomplete="off"
+                              checked
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio3"
+                              >$10</label
+                            >
 
-                            <input id="btnradio4" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio4">$20</label>
+                            <input
+                              id="btnradio4"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio2"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio4"
+                              >$20</label
+                            >
 
-                            <input id="btnradio5" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio5">$50</label>
+                            <input
+                              id="btnradio5"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio2"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio5"
+                              >$50</label
+                            >
 
-                            <input id="btnradio6" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio6">$100</label>
+                            <input
+                              id="btnradio6"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio2"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio6"
+                              >$100</label
+                            >
 
-                            <input id="btnradio7" type="radio" class="btn-check" name="btnradio2" autocomplete="off">
-                            <label class="btn btn-outline-primary" for="btnradio7">Otro</label>
+                            <input
+                              id="btnradio7"
+                              type="radio"
+                              class="btn-check"
+                              name="btnradio2"
+                              autocomplete="off"
+                            />
+                            <label
+                              class="btn btn-outline-primary"
+                              for="btnradio7"
+                              >Otro</label
+                            >
                           </div>
 
                           <form action="">
                             <div class="modal-body-right-div">
-                              <label for="exampleInputEmail1" class="form-label modal-body-right-title ">Nombre</label>
-                              <input id="exampleInputEmail1" type="email" class="form-control modal-body-right-input" aria-describedby="emailHelp">
-
+                              <label
+                                for="exampleInputEmail1"
+                                class="form-label modal-body-right-title"
+                                >Nombre</label
+                              >
+                              <input
+                                id="exampleInputEmail1"
+                                type="email"
+                                class="form-control modal-body-right-input"
+                                aria-describedby="emailHelp"
+                              />
                             </div>
                             <div class="modal-body-right-div">
-                              <label for="exampleInputPassword1" class="form-label modal-body-right-title">Correo</label>
-                              <input id="exampleInputPassword1" type="email" class="form-control modal-body-right-input">
+                              <label
+                                for="exampleInputPassword1"
+                                class="form-label modal-body-right-title"
+                                >Correo</label
+                              >
+                              <input
+                                id="exampleInputPassword1"
+                                type="email"
+                                class="form-control modal-body-right-input"
+                              />
                             </div>
-                          </form></div>
-                          
-                      
+                          </form>
+                        </div>
+
                         <div class="row gap-3">
-                          <button class="btn btn-primary  btn-form-end col" type="button">Donar con tarjeta</button>
-                          <button class="btn btn-primary  btn-form-end col" type="button">Donar con Paypal</button>
+                          <button
+                            class="btn btn-primary btn-form-end col"
+                            type="button"
+                          >
+                            Donar con tarjeta
+                          </button>
+                          <button
+                            class="btn btn-primary btn-form-end col"
+                            type="button"
+                          >
+                            Donar con Paypal
+                          </button>
                         </div>
                       </div>
                     </div>
@@ -320,8 +463,6 @@
                 </div>
               </div>
             </div>
-              
-      
           </div>
           <div class="section__donaciones-grid-right">
             <img src="/landing/donacion.svg" alt="" />

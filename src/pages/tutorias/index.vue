@@ -81,6 +81,4 @@ meta:
   layout: home
 </route>
 
-<style>
-  
-</style>
+<style></style>

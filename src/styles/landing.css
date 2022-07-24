@@ -402,7 +402,7 @@ html {
 
 .modal-header {
   padding: 4.2rem;
-  background-color: #fff ;
+  background-color: #fff;
 }
 
 .modal-title {
@@ -419,14 +419,14 @@ html {
 .modal-body-left {
   background-color: #002169;
   height: 100%;
-  border-radius: 0 0 .4rem .4rem;
+  border-radius: 0 0 0.4rem 0.4rem;
   padding-top: 4.2rem;
 }
 
 .modal-body-right {
   background-color: #d9e3ff;
   height: 100%;
-  border-radius: 0 0 .4rem .4rem ;
+  border-radius: 0 0 0.4rem 0.4rem;
   padding: 4.2rem;
 }
 
@@ -455,7 +455,6 @@ html {
   color: #fff;
   font-size: 1.6rem;
   padding: 0 4.2rem;
-  
 }
 
 .modal-body-left-title {
@@ -472,8 +471,6 @@ html {
 
 .row {
   margin: 0;
-  
-  
 }
 
 .btn-form-end {
@@ -482,7 +479,7 @@ html {
 
 .btn-primary {
   font-size: 1.6rem !important;
-  padding: .8rem 1.2rem !important;
+  padding: 0.8rem 1.2rem !important;
 }
 
 /* FOOTER */

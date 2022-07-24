@@ -12,7 +12,7 @@ const options: JitsiMeetExternalApiOptions = {
   roomName: props.roomName,
   userInfo: {
     displayName: tutorStore.name,
-    email: 'email@mail.com'
+    email: 'email@mail.com',
   },
   configOverwrite: {
     enableNoisyMicDetection: false,

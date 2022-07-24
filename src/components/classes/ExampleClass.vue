@@ -9,7 +9,7 @@ function toogleQuiz() {
     <div class="row">
       <div class="col">
         <div class="fs-1">Regla de tres</div>
-        <br>
+        <br />
         <iframe
           class="su-youtube"
           width="40%"

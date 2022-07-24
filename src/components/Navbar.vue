@@ -1,23 +1,43 @@
 <template>
   <header class="header">
-      <nav class="header__nav container">
-        <ul class="header__nav__ul">
-          <li class="header__nav__ul-li"> <router-link :to="link1" class="header__nav_ul-li-a">{{name1}}</router-link></li>
-          <li class="header__nav__ul-li"><router-link :to="link2" class="header__nav_ul-li-a">{{name2}}</router-link>
-          </li>
-          <li class="header__nav__ul-li "><router-link :to="link3" replace class=""><img src="/imgs/logo.jpg" style="width:50px; border-radius: 100%;" alt=""></router-link>
-          </li>
-          <li class="header__nav__ul-li"><router-link :to="link4" class="header__nav_ul-li-a">{{name4}}</router-link>
-          </li>
-          <li class="header__nav__ul-li"><router-link :to="link5" class="header__nav_ul-li-a">{{name5}}</router-link> </li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="header__nav container">
+      <ul class="header__nav__ul">
+        <li class="header__nav__ul-li">
+          <router-link :to="link1" class="header__nav_ul-li-a">{{
+            name1
+          }}</router-link>
+        </li>
+        <li class="header__nav__ul-li">
+          <router-link :to="link2" class="header__nav_ul-li-a">{{
+            name2
+          }}</router-link>
+        </li>
+        <li class="header__nav__ul-li">
+          <router-link :to="link3" replace class=""
+            ><img
+              src="/imgs/logo.jpg"
+              style="width: 50px; border-radius: 100%"
+              alt=""
+          /></router-link>
+        </li>
+        <li class="header__nav__ul-li">
+          <router-link :to="link4" class="header__nav_ul-li-a">{{
+            name4
+          }}</router-link>
+        </li>
+        <li class="header__nav__ul-li">
+          <router-link :to="link5" class="header__nav_ul-li-a">{{
+            name5
+          }}</router-link>
+        </li>
+      </ul>
+    </nav>
+  </header>
 </template>
 
 <script>
 export default {
-  name: "Navbar",
+  name: 'Navbar',
   props: {
     link1: String,
     link2: String,
@@ -28,12 +48,11 @@ export default {
     name2: String,
     name4: String,
     name5: String,
-  }
-};
+  },
+}
 </script>
 
 <style scoped>
-
 .header {
   height: auto;
   background-color: #d9e3ff;
@@ -78,7 +97,7 @@ export default {
 }
 
 .header__nav__ul-li:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -90,8 +109,6 @@ export default {
 .header__nav__ul-li:hover:after {
   width: 100%;
 }
-
-
 
 .primary-button:link,
 .primary-button:visited {
@@ -148,5 +165,4 @@ export default {
   padding: 0 3.2rem;
   margin: 0 auto;
 }
- 
 </style>

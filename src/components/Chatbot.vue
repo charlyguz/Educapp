@@ -1,56 +1,58 @@
 <template>
   <div class="chatbot-container">
-      <div id="myForm" class="chat-popup">
-        <form action="/action_page.php" class="form-container">
-          <iframe
-            src='https://webchat.botframework.com/embed/chatbotforeducapp-bot?s=SRi4RSjtzvw.z90A0Txk7Hf2UVcMqfF2vfpQoB3MAQrNvktAuD5o-W8' height="300px"></iframe>
-          <!-- <iframe src='https://webchat.botframework.com/embed/chatbotforeducapp-bot?s=YOUR_SECRET_HERE'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
+    <div id="myForm" class="chat-popup">
+      <form action="/action_page.php" class="form-container">
+        <iframe
+          src="https://webchat.botframework.com/embed/chatbotforeducapp-bot?s=SRi4RSjtzvw.z90A0Txk7Hf2UVcMqfF2vfpQoB3MAQrNvktAuD5o-W8"
+          height="300px"
+        ></iframe>
+        <!-- <iframe src='https://webchat.botframework.com/embed/chatbotforeducapp-bot?s=YOUR_SECRET_HERE'  style='min-width: 400px; width: 100%; min-height: 500px;'></iframe>
          -->
-
-        </form>
-      </div>
-
-
-      <div class="help-container">
-        <img class="help-img cancel" src="/imgs/chatbot.png" alt="" :onclick="closeForm">>
-        <p class="help-text" :onclick="closeForm">Necesitas ayuda?</p>
-      </div>
+      </form>
     </div>
+
+    <div class="help-container">
+      <img
+        class="help-img cancel"
+        src="/imgs/chatbot.png"
+        alt=""
+        :onclick="closeForm"
+      />>
+      <p class="help-text" :onclick="closeForm">Necesitas ayuda?</p>
+    </div>
+  </div>
 </template>
 
 <script>
-export default { 
+export default {
   mounted() {
-    document.getElementById("myForm").style.visibility = "hidden"
+    document.getElementById('myForm').style.visibility = 'hidden'
   },
   methods: {
-    closeForm: function() {
-        if (document.getElementById("myForm").style.visibility == "hidden") {
-          console.log("Entre 1")
-          document.getElementById("myForm").style.visibility = "visible";
-        } else {
-          console.log("Entre 2")
-          document.getElementById("myForm").style.visibility = "hidden";
-        }
-    }
-  }
+    closeForm: function () {
+      if (document.getElementById('myForm').style.visibility == 'hidden') {
+        console.log('Entre 1')
+        document.getElementById('myForm').style.visibility = 'visible'
+      } else {
+        console.log('Entre 2')
+        document.getElementById('myForm').style.visibility = 'hidden'
+      }
+    },
+  },
 }
 </script>
 
 <style scoped>
-  * {
+* {
   box-sizing: border-box;
 }
-
 
 .chatbot-container {
   width: 320px;
   position: fixed;
   right: 40px;
   bottom: 40px;
-  
 }
-
 
 .myForm {
   visibility: hidden;
@@ -64,16 +66,14 @@ export default {
 
 /* Set a style for the submit/login button */
 
-
-
-
 /* Add a red background color to the cancel button */
 .form-container .cancel {
   background-color: red;
 }
 
 /* Add some hover effects to buttons */
-.form-container .btn:hover, .open-button:hover {
+.form-container .btn:hover,
+.open-button:hover {
   opacity: 1;
 }
 
@@ -90,8 +90,6 @@ export default {
   bottom: 10px;
   position: relative;
 }
-
-
 
 .help-img {
   width: 50px;

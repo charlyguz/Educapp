@@ -9,7 +9,7 @@ generates:
       - typescript
   src/generated/operations.ts:
     documents:
-      - "src/graphql/**/*.graphql"
+      - 'src/graphql/**/*.graphql'
     config:
       scalars:
         Date: Date

@@ -19,14 +19,9 @@ const BASIC_DELAY = {
       async willSendResponse(context: any) {
         // Wait for 3 seconds
         await later(3_000)
-        
+
         console.log(
-          `Response: ${util.inspect(
-            context.response,
-            false,
-            null,
-            true
-          )}`
+          `Response: ${util.inspect(context.response, false, null, true)}`
         )
       },
     }

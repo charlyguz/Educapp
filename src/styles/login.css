@@ -7,20 +7,19 @@
 
 html {
   font-size: 62.5%;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   text-rendering: optimizeLegibility;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: Roboto, sans-serif;
   line-height: 1.2;
-  
 }
 
 /* CLASES REUSABLES */
 
 /* Contenedores */
 .container {
-  max-width: 1200px ;
+  max-width: 1200px;
   padding: 0 3.2rem;
   margin: 0 auto;
 }
@@ -187,7 +186,7 @@ html {
 }
 
 .header__nav__ul-li:after {
-  content: "";
+  content: '';
   position: absolute;
   bottom: -2px;
   left: 0;
@@ -214,7 +213,7 @@ main {
 .section__register--left {
   background-color: #002169;
   color: white;
-  border-radius: .8rem 0 0 .8rem;
+  border-radius: 0.8rem 0 0 0.8rem;
 }
 
 .section__register--left-title {
@@ -234,7 +233,7 @@ main {
 .section__register--right {
   width: 100%;
   background-color: white;
-  border-radius: 0 .8rem .8rem 0;
+  border-radius: 0 0.8rem 0.8rem 0;
 }
 
 .section__register--right-container {
@@ -256,11 +255,9 @@ main {
 
 .btn-outline-primary {
   width: 25% !important;
-  padding: .8rem !important;
+  padding: 0.8rem !important;
   font-size: 1.6rem;
 }
-
-
 
 .form-label {
   font-size: 1.6rem !important;
@@ -272,5 +269,5 @@ main {
 
 .btn-primary {
   font-size: 1.6rem !important;
-  padding: .8rem 1.2rem !important;
+  padding: 0.8rem 1.2rem !important;
 }
