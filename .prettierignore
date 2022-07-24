@@ -2,3 +2,5 @@ src/generated
 dist
 .eslintrc-auto-import.json
 graphql.schema.json
+src/auto-imports.d.ts
+src/components.d.ts
