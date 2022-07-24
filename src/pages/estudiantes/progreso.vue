@@ -27,7 +27,7 @@
           <div class="perfil-container">
             <img
               class="perfil-image"
-              src="/public/imgs/astronauta.jpg"
+              src="/imgs/astronauta.jpg"
               alt=""
             />
             <p class="perfil-Nombre">Juan</p>
@@ -48,11 +48,11 @@
           <div class="progreso-container-cohete">
             <img
               class="progreso-container-img"
-              src="/public/imgs/universo.png"
+              src="/imgs/universo.png"
               alt=""
             /><img
               class="progreso-container-img2"
-              src="/public/imgs/cohete.png"
+              src="/imgs/cohete.png"
               alt=""
             />
           </div>
