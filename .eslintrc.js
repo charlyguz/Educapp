@@ -15,7 +15,12 @@ module.exports = {
     parser: '@typescript-eslint/parser',
   },
   // Ignore auto-generated GraphQL code
-  ignorePatterns: ['src/generated/*'],
+  ignorePatterns: [
+    'src/generated/*',
+    './dist/*',
+    './.eslintrc-auto-import.json',
+    './graphql.schema.json'
+  ],
   plugins: ['vue', '@typescript-eslint', 'prettier'],
   rules: {
     // override/add rules settings here, such as:
@@ -29,7 +34,7 @@ module.exports = {
         selfClosingTag: 'always',
       },
     ],
-    'vue/prop-name-casing': 'off'
+    'vue/prop-name-casing': 'off',
     // 'vue/max-attributes-per-line': [
     //   2,
     //   {
