@@ -8,16 +8,13 @@ const piniaRoot = createPinia()
 export const install: UserModule = ({ isClient, initialState, app }) => {
   const pinia = piniaRoot
   pinia.state.value = {}
-  
+
   app.use(pinia)
   // Refer to
   // https://github.com/antfu/vite-ssg/blob/main/README.md#state-serialization
   // for other serialization strategies.
-  if (isClient)
-    pinia.state.value = (initialState.pinia) || {}
-
-  else
-    initialState.pinia = pinia.state.value
+  if (isClient) pinia.state.value = initialState.pinia || {}
+  else initialState.pinia = pinia.state.value
 }
 
 export default piniaRoot

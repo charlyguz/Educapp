@@ -1,4 +1,4 @@
-@import './markdown.css';
+/*@import './markdown.css';
 
 html,
 body,
@@ -6,18 +6,20 @@ body,
   height: 100%;
   margin: 0;
   padding: 0;
+  line-height: 1.2;
+  scroll-behavior: smooth;
 }
 
-html.dark {
+/* html.dark {
   background: #121212;
-}
+} */
 
 #nprogress {
   pointer-events: none;
 }
 
 #nprogress .bar {
-  background: rgb(13,148,136);
+  background: rgb(13, 148, 136);
   opacity: 0.75;
   position: fixed;
   z-index: 1031;

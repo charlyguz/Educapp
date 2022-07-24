@@ -1,33 +1,171 @@
-<script setup lang="ts">
-const { t, availableLocales, locale } = useI18n()
-
-const toggleLocales = () => {
-  // change to some real logic
-  const locales = availableLocales
-  locale.value = locales[(locales.indexOf(locale.value) + 1) % locales.length]
-}
-</script>
-
 <template>
-  <nav text-xl mt-6>
-    <RouterLink class="icon-btn mx-2" to="/" :title="t('button.home')">
-      <div i-carbon-campsite />
-    </RouterLink>
+  <!-- Footer -->
+  <footer class="bg-primary text-center text-white">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Social media -->
 
-    <button class="icon-btn mx-2 !outline-none" :title="t('button.toggle_dark')" @click="toggleDark()">
-      <div i="carbon-sun dark:carbon-moon" />
-    </button>
+      <!-- Section: Social media -->
 
-    <a class="icon-btn mx-2" :title="t('button.toggle_langs')" @click="toggleLocales()">
-      <div i-carbon-language />
-    </a>
+      <!-- Section: Form -->
 
-    <RouterLink class="icon-btn mx-2" to="/about" :title="t('button.about')">
-      <div i-carbon-dicom-overlay />
-    </RouterLink>
+      <!-- Section: Form -->
 
-    <a class="icon-btn mx-2" rel="noreferrer" href="https://github.com/antfu/vitesse" target="_blank" title="GitHub">
-      <div i-carbon-logo-github />
-    </a>
-  </nav>
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p class="footer-description">
+          Somos una organización que busca sacar el potencial en todos los
+          niños. Impulsando sus fortalezas y mejorando sus debilidades.
+        </p>
+      </section>
+      <!-- Section: Text -->
+
+      <!-- Section: Links -->
+      <section class="">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">ESTUDIANTE</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <router-link to="/estudiantes/comunidad" class="text-white"
+                  >COMUNIDAD</router-link
+                >
+              </li>
+              <li class="">
+                <router-link to="/estudiantes/tutorias" class="text-white"
+                  >TUTORIAS</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/estudiantes/progreso" class="text-white"
+                  >MI PROGRESO</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/estudiantes/cursos" class="text-white"
+                  >MIS CURSOS</router-link
+                >
+              </li>
+              <li>
+                <router-link to="/estudiantes/" class="text-white"
+                  >HOME</router-link
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">PADRE</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">MIS HIJOS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">CURSOS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">AYUDA</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">PERFIL</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">HOME</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">TUTOR</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">HORARIO</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">MIS ESTUDIANTES</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">COMUNIDAD</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">PERFIL</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">HOME</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">PROFESORES</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!" class="text-white">COMUNIDAD</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">MIS CURSOS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">MIS GRUPOS</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">PERFIL</a>
+              </li>
+              <li>
+                <a href="#!" class="text-white">HOME</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+        </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div
+      class="text-center p-3 div-app"
+      style="background-color: rgba(0, 0, 0, 0.2)"
+    >
+      © 2022 Copyright:
+      <a class="text-white" href="https://mdbootstrap.com/">Educaap</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
 </template>
+
+<style scoped>
+.footer-description {
+  font-size: 1.6rem;
+}
+
+.div-app {
+  font-size: 1.6rem;
+}
+
+h5 {
+  font-size: 1.6rem;
+}
+
+.list-unstyled li {
+  font-size: 1.2rem;
+}
+</style>

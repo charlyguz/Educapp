@@ -3,7 +3,7 @@
     ref="jitsiRef"
     domain="meet.jit.si"
     :options="jitsiOptions"
-    style="height: 60em;"
+    style="height: 60em"
   ></jitsi-meet>
 </template>
 

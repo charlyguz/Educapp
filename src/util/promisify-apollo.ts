@@ -23,7 +23,10 @@ export function promisifyUseQuery<
   })
 }
 
-export function promisifyUseLazyQuery<TResult = any, TVariables = any>(lazyQuery: {
+export function promisifyUseLazyQuery<
+  TResult = any,
+  TVariables = any
+>(lazyQuery: {
   load: (
     document?: DocumentNode,
     variables?: TVariables,

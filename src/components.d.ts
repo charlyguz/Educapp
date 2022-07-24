@@ -8,11 +8,20 @@ export {}
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
     AddMentorshipModal: typeof import('./components/tutor/dashboard/AddMentorshipModal.vue')['default']
+    Chatbot: typeof import('./components/Chatbot.vue')['default']
     Counter: typeof import('./components/Counter.vue')['default']
+    Curso: typeof import('./components/Curso.vue')['default']
+    ExampleClass: typeof import('./components/classes/ExampleClass.vue')['default']
     Footer: typeof import('./components/Footer.vue')['default']
-    LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
     JitsiMeet: typeof import('./components/jitsi/JitsiMeet.vue')['default']
+    LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
+    Materia: typeof import('./components/Materia.vue')['default']
+    Navbar: typeof import('./components/Navbar.vue')['default']
+    Notification: typeof import('./components/Notification.vue')['default']
+    Publicacion: typeof import('./components/Publicacion.vue')['default']
+    Quiz: typeof import('./components/quiz/Quiz.vue')['default']
     README: typeof import('./components/README.md')['default']
+    ReglaDeTres: typeof import('./components/classes/ReglaDeTres.md')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
   }

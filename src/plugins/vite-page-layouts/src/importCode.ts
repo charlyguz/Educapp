@@ -1,15 +1,23 @@
 import { dirname, join, parse } from 'path'
 import { ResolvedOptions, FileContainer } from './types'
 
-export function getImportCode(files: FileContainer[], options: ResolvedOptions) {
-  const layoutDirs = Array.isArray(options.layoutsDirs) ? options.layoutsDirs : [options.layoutsDirs]
+export function getImportCode(
+  files: FileContainer[],
+  options: ResolvedOptions
+) {
+  const layoutDirs = Array.isArray(options.layoutsDirs)
+    ? options.layoutsDirs
+    : [options.layoutsDirs]
   const imports: string[] = []
   const head: string[] = []
   let id = 0
 
   for (const __ of files) {
     for (const file of __.files) {
-      const path = __.path.substr(0, 1) === '/' ? `${__.path}/${file}` : `/${__.path}/${file}`
+      const path =
+        __.path.substr(0, 1) === '/'
+          ? `${__.path}/${file}`
+          : `/${__.path}/${file}`
       const parsed = parse(file)
       const name = join(parsed.dir, parsed.name).replace(/\\/g, '/')
       if (options.importMode(name) === 'sync') {
@@ -17,8 +25,7 @@ export function getImportCode(files: FileContainer[], options: ResolvedOptions) 
         head.push(`import ${variable} from '${path}'`)
         imports.push(`'${name}': ${variable},`)
         id += 1
-      }
-      else {
+      } else {
         imports.push(`'${name}': () => import('${path}'),`)
       }
     }
