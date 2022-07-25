@@ -162,7 +162,7 @@ body {
 
 .section__comunidad-container {
   padding: 0 2.4rem;
-  padding-bottom: 15rem;
+  min-height: calc(100vh - 297px);
 }
 .section__comunidad-container-grid {
   display: grid;

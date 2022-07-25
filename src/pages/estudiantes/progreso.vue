@@ -73,6 +73,7 @@ export default {}
 <style scoped>
 .section__progreso-container {
   padding: 0 2.4rem;
+  min-height: calc(100vh - 297px);
 }
 .section__comunidad-container-grid {
   display: grid;

@@ -41,7 +41,7 @@
           <curso
             img="/imgs/matematicas.jpg"
             title="Regla de tres"
-            description="sirve para determinar el vínculo lineal entre dos términos. Por ejemplo, si con un kilo de harina de trigo, preparo 2 tortas, con 5 kilos, cuantas tortas se harán."
+            description="sirve para determinar el vínculo lineal entre dos términos. "
             color="#E6958c"
           ></curso>
         </router-link>
@@ -129,6 +129,7 @@ export default {}
 <style scoped>
 .section__comunidad-container {
   padding: 0 2.4rem;
+  
 }
 .section__comunidad-container-grid {
   display: grid;
@@ -180,6 +181,11 @@ export default {}
 .icon-plus {
   width: 20px;
   padding-left: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
 }
 </style>
 

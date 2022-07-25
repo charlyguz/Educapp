@@ -38,14 +38,14 @@ export default {
 }
 
 .publicacion__container {
-  height: auto;
+  height: 100%;
   background-color: rgb(188, 235, 238);
-  aspect-ratio: 1/1;
+
   border-radius: 0.8rem;
 }
 
 .publicacion__container-img-box {
-  height: 60%;
+  height: 200px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

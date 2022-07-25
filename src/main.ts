@@ -15,8 +15,9 @@ import { defaultApolloClient } from './modules/apollo-client'
 // import 'bootstrap'
 
 // Import custom styles
-// import './styles/main.css'
+import '/src/styles/global.css'
 provideApolloClient(defaultApolloClient)
+
 
 const routes = setupLayouts(generatedRoutes.concat(customRoutes))
 

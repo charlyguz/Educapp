@@ -18,6 +18,7 @@ declare module '@vue/runtime-core' {
     Materia: typeof import('./components/Materia.vue')['default']
     Navbar: typeof import('./components/Navbar.vue')['default']
     Notification: typeof import('./components/Notification.vue')['default']
+    Pregunta: typeof import('./components/Pregunta.vue')['default']
     Publicacion: typeof import('./components/Publicacion.vue')['default']
     Quiz: typeof import('./components/quiz/Quiz.vue')['default']
     README: typeof import('./components/README.md')['default']
