@@ -229,7 +229,7 @@
           
 
           <div class="ver-mas-container">
-            <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
+            <a class="ver-mas" href="/profesores/grupos">Ver mas</a>
           </div>
         </div>
       </div>

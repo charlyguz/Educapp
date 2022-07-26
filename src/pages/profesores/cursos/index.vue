@@ -67,7 +67,7 @@
           </button>
 
           <div class="ver-mas-container">
-            <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
+            <a class="ver-mas" href="/profesores/cursos/publicos">Ver mas</a>
           </div>
         </div>
       </div>
@@ -147,7 +147,7 @@
           </button>
 
           <div class="ver-mas-container">
-            <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
+            <a class="ver-mas" href="/profesores/cursos/privados">Ver mas</a>
           </div>
         </div>
       </div>
@@ -197,7 +197,7 @@
         
 
           <div class="ver-mas-container">
-            <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
+            <a class="ver-mas" href="/profesores/cursos/preguntas">Ver mas</a>
           </div>
         </div>
       </div>
