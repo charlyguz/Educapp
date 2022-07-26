@@ -1,16 +1,16 @@
 <template lang="">
   <div>
     <navbar
-      link1="/profesores/comunidad"
-      name1="Comunidad"
-      link2="agenda"
-      name2="Agenda"
-      link3="./"
-      link4="/profesores/analiticas"
-      name4="Analíticas"
-      link5="/profesores"
-      name5="Mis Cursos"
-    ></navbar>
+    link1="/profesores/comunidad"
+    name1="Comunidad"
+    link2="/profesores/cursos"
+    name2="Mis Cursos"
+    link3="/profesores"
+    link4="/profesores/grupos"
+    name4="Mis grupos"
+    link5="/profesores/perfil"
+    name5="Mis Perfil"
+  ></navbar>
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">

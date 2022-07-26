@@ -1,14 +1,14 @@
 <template>
   <navbar
-    link1="#so"
+    link1="/profesores/comunidad"
     name1="Comunidad"
-    link2="#so"
-    name2="Agenda"
-    link3="#so"
-    link4="#so"
-    name4="Progreso"
-    link5="#so"
-    name5="Mis Cursos"
+    link2="/profesores/cursos"
+    name2="Mis Cursos"
+    link3="/profesores"
+    link4="/profesores/grupos"
+    name4="Mis grupos"
+    link5="/profesores/perfil"
+    name5="Mis Perfil"
   ></navbar>
   <section class="section__comunidad container">
     <div class="section__comunidad-container">
@@ -58,7 +58,7 @@
       <div class="section__comunidad-container-grid">
         <publicacion
           img="/69052.webp"
-          title="La noche estrellada, de Vincent Van Gogh"
+          title="La noche estrellada"
           description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
         ></publicacion>
         <publicacion
@@ -77,9 +77,14 @@
           description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
         ></publicacion>
         <publicacion
-          img="/69052.webp"
-          title="La noche estrellada"
-          description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
+          img="/imgs/guernica.jpg"
+          title="Guernica, de Pablo Picasso"
+          description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."
+        ></publicacion>
+        <publicacion
+          img="/imgs/ultimacena.jpg"
+          title="La última cena, de Leonardo Da Vinci"
+          description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."
         ></publicacion>
         <publicacion
           img="/69052.webp"
@@ -87,9 +92,14 @@
           description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
         ></publicacion>
         <publicacion
-          img="/69052.webp"
-          title="La noche estrellada"
-          description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
+          img="/imgs/guernica.jpg"
+          title="Guernica, de Pablo Picasso"
+          description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."
+        ></publicacion>
+        <publicacion
+          img="/imgs/ultimacena.jpg"
+          title="La última cena, de Leonardo Da Vinci"
+          description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."
         ></publicacion>
         <publicacion
           img="/69052.webp"
@@ -97,14 +107,14 @@
           description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
         ></publicacion>
         <publicacion
-          img="/69052.webp"
-          title="La noche estrellada"
-          description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
+          img="/imgs/guernica.jpg"
+          title="Guernica, de Pablo Picasso"
+          description="Una de las más importantes del siglo XX que es testigo del bombardeo alemán."
         ></publicacion>
         <publicacion
-          img="/69052.webp"
-          title="La noche estrellada"
-          description="La noche estrellada es un óleo sobre lienzo del pintor postimpresionista neerlandés Vincent van Gogh."
+          img="/imgs/ultimacena.jpg"
+          title="La última cena, de Leonardo Da Vinci"
+          description="Recrea la última cena de Pascua entre Jesús y sus apóstoles."
         ></publicacion>
       </div>
     </div>
@@ -123,6 +133,7 @@ export default {}
   gap: 2rem;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 0 2.4rem;
+  padding-bottom: 2.4rem;
 }
 .section__comunidad-container-header {
   display: flex;

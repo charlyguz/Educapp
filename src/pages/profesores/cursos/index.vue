@@ -13,13 +13,13 @@
   <section class="section__comunidad container">
     <div class="section__comunidad-container">
       <div class="section__comunidad-container-header">
-        <h2 class="global-title">Hola Jesús</h2>
+        <h2 class="global-title">Mis cursos </h2>
 
         
       </div>
       
       <p class="section__comunidad-container-header-description">
-        Crea, modifica o visualiza tus cursos privados o públicos. Puedes buscar por nombre o filtrar por categoria. Responde preguntas y vizualiza tus grupos.
+        Crea, modifica o visualiza tus cursos privados o públicos. Puedes buscar por nombre o filtrar por categoria.
       </p>
       
       <div class="section__comunidad-container-header-subtitle">
@@ -183,7 +183,6 @@
           color="#6cb17d"
         ></curso>
       </div>
-      
 
       <div class="section__comunidad-container-header-subtitle">
         <div class="global-subtitle-container-left">
@@ -195,7 +194,11 @@
       
         <div class="section__comunidad-container-header-buttons section__comunidad-container-header-buttons-preguntas">
           
-          
+          <button
+            class="section__comunidad-container-header-button filtros-button btn btn-secondary"
+          >
+            Filtros
+          </button>
 
           <div class="ver-mas-container">
             <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
@@ -215,37 +218,7 @@
         <pregunta title="¿Qué es un cuento?" clase="Partes del cuento" materia="Español" estudiante="Juan" color="#8ccee6"></pregunta>
         <pregunta title="¿Qué es una fracción?" clase="Fundamentos de matemáticas" materia="Matemáticas" estudiante="Juan" color="#e6958c"></pregunta>
       </div>
-
-      <div class="section__comunidad-container-header-subtitle">
-        <div class="global-subtitle-container-left">
-
-            <p class="global-subtitle">Mis Grupos</p>
-
-
-        </div>
       
-        <div class="section__comunidad-container-header-buttons section__comunidad-container-header-buttons-preguntas">
-          
-          
-
-          <div class="ver-mas-container">
-            <a class="ver-mas" href="/estudiantes/progreso">Ver mas</a>
-          </div>
-        </div>
-      </div>
-
-      
-
-      <div class="section__comunidad-container-grid">
-        <grupo title="¿Qué es el átomo?" clase="La materia y sus transformaciones" materia="Biologia" estudiante="Juan" color="#6cb17d"></grupo>
-        <grupo title="¿Qué es un cuento?" clase="Partes del cuento" materia="Español" estudiante="Juan" color="#8ccee6"></grupo>
-        <grupo title="¿Qué es una fracción?" clase="Fundamentos de matemáticas" materia="Matemáticas" estudiante="Juan" color="#e6958c"></grupo>
-        <grupo title="¿Quién descubrió América?" clase="Historia General" materia="Historia" estudiante="Juan" color="#f9d99a"></grupo>
-        <grupo title="¿Quién descubrió América?" clase="Historia General" materia="Historia" estudiante="Juan" color="#f9d99a"></grupo>
-        <grupo title="¿Qué es el átomo?" clase="La materia y sus transformaciones" materia="Biologia" estudiante="Juan" color="#6cb17d"></grupo>
-        <grupo title="¿Qué es un cuento?" clase="Partes del cuento" materia="Español" estudiante="Juan" color="#8ccee6"></grupo>
-        <grupo title="¿Qué es una fracción?" clase="Fundamentos de matemáticas" materia="Matemáticas" estudiante="Juan" color="#e6958c"></grupo>
-      </div>
     </div>
   </section>
 </template>
