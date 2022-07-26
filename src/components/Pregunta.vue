@@ -33,7 +33,6 @@ export default {
 
 <style>
 .pregntas__container {
-  background-color: #6cb17d;
   border-radius: .8rem;
   padding: 1rem;
   position: relative;

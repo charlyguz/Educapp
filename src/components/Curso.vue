@@ -25,7 +25,7 @@ export default {
       return 'background-image: url(' + this.img + ')'
     },
     style2() {
-      return 'background-color:' + this.color
+      return 'background-color:' + this.color;
     },
   },
 }

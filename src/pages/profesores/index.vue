@@ -30,7 +30,7 @@
            <p class="global-subtitle">Mis Cursos Publicos</p>
 
         
-            <div class="input-group mb-3">
+            <div class="input-group mb">
               <input type="text" class="form-control" placeholder="Buscar curso..." aria-label="Recipient's username" aria-describedby="basic-addon2">
               <span id="basic-addon2" class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -112,7 +112,7 @@
            <p class="global-subtitle">Mis Cursos Privados</p>
 
         
-            <div class="input-group mb-3">
+            <div class="input-group">
               <input type="text" class="form-control" placeholder="Buscar curso..." aria-label="Recipient's username" aria-describedby="basic-addon2">
               <span id="basic-addon2" class="input-group-text"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
   <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
@@ -237,14 +237,16 @@
       
 
       <div class="section__comunidad-container-grid">
-        <grupo title="¿Qué es el átomo?" clase="La materia y sus transformaciones" materia="Biologia" estudiante="Juan" color="#6cb17d"></grupo>
-        <grupo title="¿Qué es un cuento?" clase="Partes del cuento" materia="Español" estudiante="Juan" color="#8ccee6"></grupo>
-        <grupo title="¿Qué es una fracción?" clase="Fundamentos de matemáticas" materia="Matemáticas" estudiante="Juan" color="#e6958c"></grupo>
-        <grupo title="¿Quién descubrió América?" clase="Historia General" materia="Historia" estudiante="Juan" color="#f9d99a"></grupo>
-        <grupo title="¿Quién descubrió América?" clase="Historia General" materia="Historia" estudiante="Juan" color="#f9d99a"></grupo>
-        <grupo title="¿Qué es el átomo?" clase="La materia y sus transformaciones" materia="Biologia" estudiante="Juan" color="#6cb17d"></grupo>
-        <grupo title="¿Qué es un cuento?" clase="Partes del cuento" materia="Español" estudiante="Juan" color="#8ccee6"></grupo>
-        <grupo title="¿Qué es una fracción?" clase="Fundamentos de matemáticas" materia="Matemáticas" estudiante="Juan" color="#e6958c"></grupo>
+        <grupo title="Los poderosos" color="#6cb17d" grupo="Grupo #81" img="'/imgs/biologia.jpg'"></grupo>
+        <grupo title="Los padrotes" color="#8ccee6" grupo="Grupo #86" img="'/imgs/ciencias.jpg'"></grupo>
+        <grupo title="Los superheroes" color="#e6958c" grupo="Grupo #88" img="'/imgs/matematicas.jpg'"></grupo>
+        <grupo title="Los magos" color="#f9d99a" grupo="Grupo #89" img="'/imgs/historia.jpg'"></grupo>
+        <grupo title="Los magos" color="#f9d99a" grupo="Grupo #89" img="'/imgs/historia.jpg'"></grupo>
+        <grupo title="Los poderosos" color="#6cb17d" grupo="Grupo #81" img="'/imgs/biologia.jpg'"></grupo>
+        <grupo title="Los padrotes" color="#8ccee6" grupo="Grupo #86" img="'/imgs/ciencias.jpg'"></grupo>
+        <grupo title="Los superheroes" color="#e6958c" grupo="Grupo #88" img="'/imgs/matematicas.jpg'"></grupo>
+
+
       </div>
     </div>
   </section>
@@ -309,6 +311,8 @@ export default {}
 
 .global-subtitle-container-left {
   display: flex;
+  align-items: center;
+  align-content: center;
 }
 
 .section__comunidad-container-header-description {
