@@ -1,296 +1,178 @@
+
+
 <template>
-  <nav class="navbar navbar-expand-lg bg-info">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Eduapp</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarNav"
-        aria-controls="navbarNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div id="navbarNav" class="collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Perfil</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Configuracion</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Salir</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <div class="img">
-    <img
-      src="https://4.bp.blogspot.com/-Js496fql3IY/V-44b4hDdzI/AAAAAAAABNk/QoHu8dk9epYilxzwmL_7UzLXEpwq2DuawCLcB/s1600/people-316506_1280.jpg"
-      class="img-fluid"
-      alt="..."
-    />
-  </div>
+  <navbar
+    link1="/profesores/comunidad"
+    name1="Comunidad"
+    link2="/profesores/cursos"
+    name2="Mis Cursos"
+    link3="/profesores"
+    link4="/profesores/grupos"
+    name4="Mis grupos"
+    link5="/profesores/perfil"
+    name5="Mis Perfil"
+  ></navbar>
+  <section class="section__comunidad container">
+    <div class="section__comunidad-container">
+      <div class="section__comunidad-container-header">
+        <h2 class="global-title">Hola Hector</h2>
 
-  <p class="lead">
-    Usted tiene el control sobre lo que su hijo consume en nuestra web. Por ello
-    usted registra a su hijo para darle los accesos del perfil del menor. Usted
-    tiene el control sobre lo que su hijo consume en nuestra web. Por ello usted
-    registra a su hijo para darle los accesos del perfil del menor. Usted tiene
-    el control sobre lo que su hijo consume en nuestra web. Por ello usted
-    registra a su hijo para darle los accesos del perfil del menor.Usted tiene
-    el control sobre lo que su hijo consume en nuestra web. Por ello usted
-    registra a su hijo para darle los accesos del perfil del menor.
-  </p>
-  <figure class="text-center">
-    <blockquote class="blockquote">
-      <p>Mis hijos</p>
-    </blockquote>
-    <figcaption class="blockquote-footer">
-      Aqui puedes ver los perfiles de tus hijos
-    </figcaption>
-  </figure>
+        
+      </div>
+      
+      <p class="section__comunidad-container-header-description">
+        Consulta el perfil de tus hijos. Usted tiene el control total sobre su hijo.
+      </p>
+      
+      <div class="section__comunidad-container-header-subtitle">
+        
 
-  <div class="container_hijos">
-    <div class="card" style="width: 16rem">
-      <img
-        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h1 class="display-6">Jose salazar</h1>
-        <p class="card-text">
-          Usted tiene el control sobre lo que su hijo consume en nuestra web.
-        </p>
+        <div class="global-subtitle-container-left">
+           <p class="global-subtitle">Hijos</p>
+        </div>
       </div>
-    </div>
-    <div class="card" style="width: 16rem">
-      <img
-        src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png"
-        class="card-img-top"
-        alt="..."
-      />
-      <div class="card-body">
-        <h1 class="display-6">Marcos salazar</h1>
-        <p class="card-text">
-          Usted tiene el control sobre lo que su hijo consume en nuestra web.
-        </p>
-      </div>
-    </div>
-    <div class="btn-add">
-      <button type="button" class="btn btn-outline-info">Agregar hijo</button>
-    </div>
-  </div>
 
-  <section class="help-section">
-    <div class="help-container">
-      <div>
-        <img
-          class="help-img"
-          src="https://www.svgrepo.com/show/326554/chatbox-outline.svg"
-          alt=""
-        />
+      <div class="section__comunidad-container-grid">
+        <div class="section__comunidad-container-grid">
+        <hijo color="#8ccee6" img='/imgs/niño.jpg' title="Juan" nivel="Viajero" racha="20 días seguidos"></hijo>
       </div>
-      <p class="help-text">Necesitas ayuda?</p>
+
+      <div class="section__comunidad-container-grid">
+        <hijo color="#f9d99a" img='/imgs/niño.jpg' title="Juan" nivel="Viajero" racha="20 días seguidos"></hijo>
+      </div>
+
+      <div class="section__comunidad-container-grid">
+        <hijo color="#e6958c" img='/imgs/niño.jpg' title="Juan" nivel="Viajero" racha="20 días seguidos"></hijo>
+      </div>
+
+      </div>
+
+      
     </div>
   </section>
-
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="quick-links">
-        <h5 class="quick-links-title">Quick links</h5>
-        <ul class="list-unstyled quick-links">
-          <li>
-            <a href=""><i class="fa fa-angle-double-right"></i>Home</a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-angle-double-right"></i>About</a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-angle-double-right"></i>FAQ</a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-angle-double-right"></i>Get Started</a>
-          </li>
-          <li>
-            <a href=""><i class="fa fa-angle-double-right"></i>Videos</a>
-          </li>
-        </ul>
-      </div>
-      <div class="img-edu">
-        <a href="#">
-          <img src="" alt="" />
-        </a>
-      </div>
-    </div>
-  </footer>
 </template>
 
-<style>
-.navbar navbar-expand-lg bg-info {
-  background-color: #f5f5f5;
-}
-.img-fluid {
-  position: relative;
-  left: 18vw;
-  width: 60vw;
-}
-.img {
-  padding-top: 50px;
-  padding-bottom: 50px;
-  margin: 20px;
-}
-.lead {
-  margin: 50px;
-  font-size: 15px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
-}
-.text-center {
-  margin-top: 50px;
-  font-size: 20px;
-  text-align: center;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
+<script>
+export default {}
+</script>
+
+<style scoped>
+.section__comunidad {
+  min-height: calc(100vh - 297px);
 }
 
-.container_hijos {
-  display: flex;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 30px;
-  padding-right: 30px;
-  flex-direction: row;
-  background-color: #46e39f;
-  border-radius: 30px;
-  position: relative;
-  left: 15vw;
-  width: 60vw;
-}
-.card {
-  margin: 20px;
+.section__comunidad-container {
+  padding: 0 2.4rem;
+  
 }
 
-.display-6 {
-  font-size: 30px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.btn-add {
-  display: flex;
-  height: 60px;
-  align-content: flex-end;
-  position: relative;
-  left: 3vh;
-  top: 15px;
-  margin: 10px;
-}
-
-.help-container {
-  width: 100%;
-  height: 20vh;
+.ver-mas-container {
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 10px;
-}
-.help-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 1px black solid;
-  background-color: #fff;
-  cursor: pointer;
-  position: relative;
-  right: -10px;
-}
-.help-text {
-  /* font-size: 1.5rem; */
-  font-weight: bold;
-  border: 1px black solid;
-  padding: 0.5rem;
-  padding-left: 1rem;
-  border-radius: 0 1rem 1rem 0;
-  margin-left: 1rem;
-  margin-bottom: 2px;
 }
 
-.footer {
-  width: 100%;
-  height: 20vw;
-  background-color: #2b32b5;
+.ver-mas {
+  font-size: 1.2rem;
 }
-.footer-container {
-  position: relative;
-  top: 0px;
-  left: 40%;
-  width: 40vw;
-  height: 75%;
-  display: flex;
+
+.section__comunidad-container-grid {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: 1fr;
+  padding-bottom: 2.4rem;
 }
-.quick-links {
-  width: 100%;
-  height: 100%;
+.section__comunidad-container-header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 2.4rem 0;
   align-items: center;
 }
-.quick-links-title {
-  width: 10vw;
-  justify-content: center;
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #fff;
-  position: relative;
-  bottom: 10vw;
-  right: 50%;
+
+.section__comunidad-container-header-subtitle {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 0;
+  align-items: center;
+  
 }
 
-@media only screen and (max-width: 800px) {
-  .container_hijos {
-    display: flex;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-direction: column;
-    background-color: #46e39f;
-    border-radius: 30px;
-  }
-  .footer-container {
-    position: relative;
-    left: 20vh;
-    top: 10px;
-    height: 80%;
-    width: 65%;
-  }
-  .quick-links {
-    width: 100%;
-    height: 100px;
-    font-size: 0.7rem;
-    padding: 10px;
-    margin: 10px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .quick-links-title {
-    font-size: 1rem;
-  }
+
+.global-title {
+  margin: 0;
+  font-size: 2rem;
 }
+
+.global-subtitle {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0;
+  white-space: nowrap;
+  margin-right: 2rem;
+  line-height: 2;
+}
+
+.global-subtitle-container-left {
+  display: flex;
+  align-items: center;
+  align-content: center;
+}
+
+.section__comunidad-container-header-description {
+  font-size: 1.6rem;
+}
+.section__comunidad-container-header-buttons {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2rem;
+}
+
+.section__comunidad-container-header-buttons-preguntas {
+  grid-template-columns: auto auto  ;
+}
+
+.btn-primary {
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+}
+.btn-outline-primary {
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+}
+.btn-secondary {
+  font-size: 1.6rem;
+  padding: 0.4rem 0.8rem;
+}
+.crear-publicaciones-button {
+  display: flex;
+  align-items: center;
+}
+.icon-plus {
+  width: 20px;
+  padding-left: 0.5rem;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+
+.input-group{
+  height: 100%;
+}
+
+.form-control{
+  font-size: 1.6rem;
+} 
+
+.input-group-text {
+  
+}
+
 </style>
+
+<route lang="yaml">
+meta:
+  layout: globals
+</route>

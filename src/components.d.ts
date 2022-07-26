@@ -15,6 +15,7 @@ declare module '@vue/runtime-core' {
     Footer: typeof import('./components/Footer.vue')['default']
     Grupo: typeof import('./components/Grupo.vue')['default']
     Grupos: typeof import('./components/Grupos.vue')['default']
+    Hijo: typeof import('./components/hijo.vue')['default']
     JitsiMeet: typeof import('./components/jitsi/JitsiMeet.vue')['default']
     LiveSessionsTable: typeof import('./components/tutor/dashboard/LiveSessionsTable.vue')['default']
     Materia: typeof import('./components/Materia.vue')['default']
