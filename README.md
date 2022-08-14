@@ -41,4 +41,13 @@ Por supuest! y Aquí te  explicamos como
 
 Una de las ventajas de la plataforma, es que  es muy fácil de utilizar solo hay que seguir estos sencillos pasos 
 [![Whats-App-Image-2022-08-14-at-1-48-27-PM.jpg](https://i.postimg.cc/HL8j0Y49/Whats-App-Image-2022-08-14-at-1-48-27-PM.jpg)](https://postimg.cc/kV9nqdH2)
+Esto es realmente sencillo  
+
+En la parte superir se encuentra una botón con el nombre ¡Comienza ahora! al presionarlo se puede seleccionar si eres  alumn, maestro, tuttor o padre de familia, si queires registrar a  tus hijos selecciona el botón de padre
+
+[![hqdefault-2.jpg](https://i.postimg.cc/hPN7y4Kv/hqdefault-2.jpg)](https://postimg.cc/CzH1dgBp)
+
+Una  vez dentro podrás comenzar con el registro de tu hijo  así como podrás ver las materias disponibles para tu hijo
+
+[![Whats-App-Image-2022-08-14-at-3-40-00-PM.jpg](https://i.postimg.cc/DzfF1D86/Whats-App-Image-2022-08-14-at-3-40-00-PM.jpg)](https://postimg.cc/JsF9Lp3H)
 
